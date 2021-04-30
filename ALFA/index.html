@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <title>Hello, world!</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+    body {
+        font-family: 'Roboto Slab', serif;
+    }
+
+    header {
+        background-image: url(img/banner.jpg);
+        background-size: cover;
+        background-position-x: center;
+        padding: 60px 0;
+            background-color: #8bc1e5;
+    }
+
+    .box-banner {
+        height: 550px;
+        position: relative;
+    }
+
+    .arco1 {
+        width: 40%;
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+
+    .arco2 {
+        width: 40%;
+
+        position: absolute;
+        right: -20px;
+        top: 50px;
+    }
+
+    .arco3 {
+        width: 18%;
+
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+    }
+
+    .logo-alfa {
+        position: absolute;
+        top: 39%;
+        left: 0;
+    }
+
+    .bg-ceucv {
+        background: #90BEE4;
+    }
+
+    .fecha {
+        display: inline-block;
+        position: absolute;
+        top: 42%;
+        right: -20px;
+    }
+
+    .textred-ucv {
+        color: #ED3259;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .textblue-ucv {
+        color: #0A4E9B;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .box-date {
+        font-family: Alfa Slab One;
+        background: #0a4e9b;
+        padding: 15px 30px;
+        color: white;
+    }
+
+    .font-nunitob {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 700;
+        font-size: 46px;
+        letter-spacing: -1px;
+    }
+
+    .col-md-6,
+    .col-md-12 {
+        outline: none;
+    }
+
+    .l-container {
+        padding: 40px 0;
+    }
+
+    .li-font {
+        FONT-WEIGHT: 100;
+        font-family: sans-serif;
+    }
+
+    .color-parrafo {
+        color: #4F4F4F;
+    }
+
+    #form-r {
+        padding: 40px 55px;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+        background-color: white;
+    }
+
+    #form-r .form-control {
+        border-radius: 24px;
+        border: 1px solid #C4C4C4;
+        height: calc(2em + .75rem + 2px);
+    }
+
+    #form-r .form-group {
+        margin-bottom: .8rem;
+    }
+
+    .bg-blueucv {
+        background: #0A4E9B;
+    }
+
+    .container-form {
+        margin-top: -189px;
+    }
+
+    .box-date h1 {
+        font-size: 38px;
+    }
+
+    .termns {
+        font-size: 12px;
+    }
+
+    .f-12 {
+        font-size: 12px;
+    }
+
+    .btn-enviar,
+    .btn-enviar:hover,
+    .btn-enviar:active {
+        background: #ED3259 !important;
+        border-radius: 24px;
+        padding: 10px 50px;
+        border-color: #ED3259 !important;
+        margin: 0 auto;
+
+        display: block;
+    }
+
+    .mar-top {
+        margin-top: 80px;
+    }
+
+    .list-ucv {
+        padding-left: 0;
+        list-style: none;
+
+    }
+
+    .list-ucv li,
+    .title-list {
+        position: relative;
+        margin-bottom: 12px;
+    }
+
+    .list-inver {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+    }
+
+    .list-ucv li::before {
+        content: "\2022";
+        color: #0A4E9B;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        font-size: 22px;
+        position: absolute;
+        top: -3px;
+        margin-left: -1em;
+    }
+
+    .card .list-ucv li::before {
+        color: #ED3259;
+    }
+
+    .list-inver .list-ucv .check-icon::before {
+        content: "\f00c" !important;
+        color: #ED3259 !important;
+        font-weight: initial !important;
+        font: normal normal normal 14px/1 FontAwesome;
+        display: inline-block;
+        width: 1em;
+        font-size: 18px;
+        position: absolute;
+        top: 2px;
+        margin-left: -1.4em;
+    }
+
+    .col-r {
+        padding-right: 5px;
+    }
+
+    .col-l {
+        padding-left: 5px;
+    }
+
+    .card .list-ucv .check-icon::before {
+        content: "\f00c" !important;
+        color: white !important;
+        font-weight: initial !important;
+        font: normal normal normal 14px/1 FontAwesome;
+        display: inline-block;
+        width: 1em;
+        font-size: 18px;
+        position: absolute;
+        top: 2px;
+        margin-left: -1.4em;
+    }
+
+    .row-ucv {
+        display: flex;
+        align-items: center;
+    }
+
+    .bg-reducv {
+        background-color: #ED3259;
+    }
+
+    .card {
+        padding: 30px 60px;
+        border-radius: 16px;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    footer {
+        padding: 50px 0 20px 0;
+        background: #E0E0E0;
+    }
+
+
+    footer p {
+        color: #888888;
+        font-size: 16px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 15px;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #ED3259;
+    }
+
+    .title-card {
+        font-size: 27.9583px;
+    }
+    .slick-dots {
+ 
+    bottom: -75px;
+    }
+
+    #experencias-curriculares {
+        padding-bottom: 100px;
+    }
+#hidder-block{
+    display: none;
+}
+    .item-list {
+        border-bottom: 1px solid white;
+        padding-bottom: 7px;
+        margin-bottom: 10px;
+    }
+    @media (min-width: 1600px) {
+        header {
+    background-image: url(img/banner.jpg);
+    background-size: contain;
+    background-position-x: center;
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-color: #8bc1e5;
+}
+    }
+   
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1000px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        #form-r {
+            padding: 30px 35px;
+
+        }
+
+        .card {
+            padding: 15px 40px;
+        }
+
+        .logo-educa {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #888888;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #hidder-block{
+    display: block;
+}
+       #hidder-block .list-ucv{
+            padding-left: 40px; 
+        }
+        .row-ucv {
+            display: initial;
+        }
+
+        .col-r {
+            padding-right: 15px;
+        }
+
+        .col-l {
+            padding-left: 15px;
+        }
+
+        .wrapper {
+            margin-top: 50px;
+        }
+
+        #clases .list-inver {
+            display: none;
+        }
+
+        .row-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .container-form {
+            margin-top: 49px;
+        }
+
+        .logo-alfa {
+            position: absolute;
+            top: -3%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .fecha {
+
+            position: absolute;
+            top: initial;
+            bottom: -120px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+            text-align: center;
+        }
+
+        .arco1,
+        .arco2,
+        .arco3 {
+            display: none;
+        }
+
+        header {
+            background-image: url(img/banner-responsive.svg);
+            background-position-y: center;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .title-card {
+            font-size: 23px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        #form-r {
+            box-shadow: 7px 7px 20px white;
+            padding: 10px 15px;
+        }
+
+        .box-date h1 {
+            font-size: 29px;
+        }
+
+        .logo-alfa {
+            width: 65%;
+        }
+
+        .box-banner {
+            height: 411px;
+        }
+
+        #clases .list-inver {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="col-12 box-banner">
+                    <div class="arcos">
+                        <img src="img/arco1.png" alt="" class="img-fluid arco1" />
+                        <img src="img/arco2.png" alt="" class="img-fluid arco2" />
+                        <img src="img/abajo.svg" alt="" class="img-fluid arco3" />
+                    </div>
+                    <div class="logo">
+                        <img src="img/LogoAlfa.svg" alt="img-fluid " class="logo-alfa" />
+                    </div>
+                    <div class="fecha">
+                        <div class="box-date">
+                            <h1 class="mb-0">INICIO:</h1>
+                            <h1 class="mb-0">28 SEP</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="clases" class="l-container">
+            <div class="container">
+                <div class="row row-reverse">
+                    <div class="col-md-6">
+                        <div class="wrapper">
+                            <h4 class="textred-ucv mb-lg-4">CLASES 100% ONLINE EN <br>TIEMPO REAL</h4>
+                            <h1 class="font-nunitob mb-0">Blackboard</h1>
+                            <h2 class="li-font">ULTRA</h2>
+                            <p class="color-parrafo">Hemos evolucionado a una poderosa plataforma virtual, formando una
+                                alianza tecnológica educativa que te ayudará a aprender sin límites estés donde estés.
+                                Estamos contigo acompañandote a salir adelante.</p>
+                            <div class="list-inver mar-top">
+                                <h4 class="textblue-ucv  title-list">INVERSIÓN:</h4>
+                                <ul class="list-ucv">
+                                    <li>Inscripción Cero</li>
+                                    <li>Cuotas solidarias por COVID-19</li>
+
+                                </ul>
+
+                                <h4 class="textblue-ucv mt-4 title-list">DURACIÓN:</h4>
+                                <ul class="list-ucv">
+                                    <li>12 Semanas</li>
+
+                                </ul>
+                                <h4 class="textblue-ucv mt-4 title-list">HORARIOS:</h4>
+                                <b>Lunes, miércoles y viernes</b>
+                                <ul class="list-ucv mt-2">
+                                    <li>Mañana : 8:30 a.m a 12:30 p.m</li>
+                                    <li>Tarde : 3:30 p.m a 7:30 p.m</li>
+                                    <li>Noche : 6:30 a.m a 10:30 p.m</li>
+
+                                </ul>
+                                <p class="termns">*Disponibilidad según el campus de tu localidad.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container-form">
+                            <form id="form-r">
+                                <h4 class="textred-ucv mb-lg-4">INSCRÍBETE EN EL<br> PROGRAMA ALFA ULTRA 2020</h4>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="DNI*">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombres (s)*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Apellidos*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Número de celular*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Carrera">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Colegio">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Año de egreso">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="terminos">
+                                    <label class="form-check-label termns" for="terminos">Para poder informarte sobre
+                                        nuestras carreras, autorízanos a registrar tus datos y a contactarte, según
+                                        nuestros términos que puedes revisar en este enlace</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2 btn-enviar">ENVIAR</button>
+                            </form>
+                        </div>
+                        <div class="list-inver">
+                            <h4 class="textblue-ucv mt-4 title-list mt-5">REQUISITOS:</h4>
+                            <ul class="list-ucv">
+                                <li class="check-icon">Copia de DNI o carné de extranjería</li>
+                                <li class="check-icon">Captura de imagen fotográfica</li>
+                                <li class="check-icon">Certificado original de estudios <br>secundarios.*</li>
+
+                            </ul>
+                            <p style="color: #888888;font-family: Roboto Slab;font-weight: 400;">*Los certificados de
+                                egresados de I.I.E.E. no escolarizados deberán estar visados por la DRE o UGEL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experencias-curriculares" class="l-container">
+            <div class="container">
+                <div class="row carousel">
+                    <div class="col-md-6 mb-md-4 col-r tarjeta">
+                        <div class="card bg-reducv  h-100">
+                            <div class="card-title ">
+                                <img src="img/icon-profesor.svg" class="img-fluid" alt="">
+                                <h2 class="text-white mt-2 mb-4 title-card">EXPERIENCIAS CURRICULARES</h2>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-ucv text-white">
+                                    <p class="item-list">
+                                        <i class="fa fa-check"></i> <span class="pl-2">Logico Matemático</span>
+                                    </p>
+                                    <p class="item-list">
+                                        <i class="fa fa-check"></i> <span class="pl-2">Comunicación</span>
+                                    </p>
+                                    <p class="item-list">
+                                        <i class="fa fa-check"></i> <span class="pl-2">Orientación Vocacional</span>
+                                    </p>
+                                </ul>
+                                <h2 class="text-white mt-4 mb-3 title-card">COMPLEMENTARIAS</h2>
+                                <ul class="list-ucv text-white mb-5">
+                                    <p class="item-list">
+                                        <i class="fa fa-check"></i> <span class="pl-2">Inglés</span>
+                                    </p>
+                                    <p class="item-list">
+                                        <i class="fa fa-check"></i> <span class="pl-2">Entorno Virtuales de
+                                            Aprendizaje</span>
+                                    </p>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-md-4 col-l tarjeta">
+                        <div class="card bg-ceucv h-100">
+                            <div class="card-title ">
+                                <img src="img/Medalla.svg" class="img-fluid" alt="">
+                                <h2 class="text-white mt-2 mb-4 title-card">BENEFÍCIATE CON LOS SERVICIOS UCV </h2>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-ucv mt-2 text-white">
+                                    <li>Talleres de orientación vocacional y desarrollo personal con especilistas.</li>
+                                    <li>Workshops UCV, aprendizaje activo dinámico en nuestros laboratorios.</li>
+                                    <li>Escuela de padres, talleres y charlas para familias vallejianas</li>
+                                    <li>Servicio de bienestar universitario para que tu experiencia sea integral</li>
+
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 tarjeta">
+                        <div class="card bg-blueucv h-100 ">
+                            <div class="card-title row-ucv">
+                                <img src="img/Libro.svg" class="img-fluid" alt="">
+                                <h2 class="text-white mt-2 mb-2 title-card pl-md-3">BENEFICIOS AL<br> INGRESAR A LA UCV
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="list-ucv mt-2 text-white">
+                                            <li>Exoneración de costo de matricula en el primer semestre académico.</li>
+                                            <li>Ingreso preferente a la carrera que elijas.
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-ucv mt-2 text-white">
+                                            <li>Matrícula preferente en la elección de turno y horarios.</li>
+                                            <li>Categoría B de pensiones para egresados del Programa Alfa*.
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mt-3 text-white f-12">
+                                            <p class="mb-2">*La falta de pago de pensiones en las fechas establecidas,
+                                                traerá como consecuencia la no visualización de sus notas, ni ningún
+                                                documento oficial que soliciten a la universidad.</p>
+                                            <p>*Las pensiones pueden variar en el transcurso del tiempo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hidder-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="list-inver">
+                            <h4 class="textblue-ucv  title-list">INVERSIÓN:</h4>
+                            <ul class="list-ucv">
+                                <li>Inscripción Cero</li>
+                                <li>Cuotas solidarias por COVID-19</li>
+
+                            </ul>
+
+                            <h4 class="textblue-ucv mt-4 title-list">DURACIÓN:</h4>
+                            <ul class="list-ucv">
+                                <li>12 Semanas</li>
+
+                            </ul>
+                            <h4 class="textblue-ucv mt-4 title-list">HORARIOS:</h4>
+                            <b>Lunes, miércoles y viernes</b>
+                            <ul class="list-ucv mt-2">
+                                <li>Mañana : 8:30 a.m a 12:30 p.m</li>
+                                <li>Tarde : 3:30 p.m a 7:30 p.m</li>
+                                <li>Noche : 6:30 a.m a 10:30 p.m</li>
+
+                            </ul>
+                            <p class="termns">*Disponibilidad según el campus de tu localidad.</p>
+                        </div>
+                        <div class="list-inver mb-5">
+                            <h4 class="textblue-ucv mt-4 title-list mt-5">REQUISITOS:</h4>
+                            <ul class="list-ucv">
+                                <li class="check-icon">Copia de DNI o carné de extranjería</li>
+                                <li class="check-icon">Captura de imagen fotográfica</li>
+                                <li class="check-icon">Certificado original de estudios <br>secundarios.*</li>
+
+                            </ul>
+                            <p style="color: #888888;font-family: Roboto Slab;font-weight: 400;">*Los certificados de
+                                egresados de I.I.E.E. no escolarizados deberán estar visados por la DRE o UGEL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 ">
+                    <img src="img/logo-educacion.svg" class="img-fluid d-block mx-auto logo-educa" alt="">
+                </div>
+                <div class="col-md-5 col-10">
+                    <img src="img/logo-ucv.svg" class="img-fluid  d-block mx-auto" alt="">
+                </div>
+                <div class="col-md-8 pt-5">
+                    <p class="text-center">© 2020 UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS RESERVADOS. POLÍTICAS
+                        DE PRIVACIDAD | TÉRMINOS DE USO</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            function altura() {
+
+                var tarjetas = document.querySelectorAll(".tarjeta");
+                var maximo = 0;
+                for (let i = 0; i < tarjetas.length; i++) {
+                    console.log(tarjetas[i].offsetHeight)
+                    if (maximo < tarjetas[i].offsetHeight) {
+                        maximo = tarjetas[i].offsetHeight;
+                    }
+                }
+                maximo += 42;
+                for (let i = 0; i < tarjetas.length; i++) {
+                    tarjetas[i].style.height = "" + maximo + "px";
+                }
+            }
+
+
+            $slick_slider = $('.carousel');
+            settings = {
+                slidesToShow: 1,
+                dots: true,
+                centerMode: true,
+                centerPadding: '0px',
+                arrows: false,
+                infinite: false
+            }
+            if ($(window).width() < 768) {
+                $slick_slider.slick(settings);
+                altura();
+
+
+
+            }
+
+
+
+       
+
+
+
+                $(window).on('resize', function () {
+                    if ($(window).width() > 767) {
+                        if ($slick_slider.hasClass('slick-initialized')) {
+                            $slick_slider.slick('unslick');
+                        }
+                        return
+                    }
+
+                    if (!$slick_slider.hasClass('slick-initialized')) {
+                        return $slick_slider.slick(settings);
+                    }
+                });
+
+
+
+
+            });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,680 @@
+@font-face {
+    font-family: "Prelo Book";
+    src: url(../fonts/Prelo-Book.otf);
+}
+
+@font-face {
+    font-family: "Prelo Exbd";
+    src: url(../fonts/Prelo-Exbd.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Bold";
+    src: url(../fonts/PreloSlab-Bold.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Book";
+    src: url(../fonts/PreloSlab-Book.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Medium";
+    src: url(../fonts/PreloSlab-Medium.otf);
+}
+
+@font-face {
+    font-family: 'MessinaSans Book';
+    src: url(../fonts/MessinaSans-Book.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Regular';
+    src: url('../fonts/MessinaSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Semibold';
+    src: url('../fonts/MessinaSans-SemiBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Light';
+    src: url('../fonts/MessinaSerif-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaModern';
+    src: url('../fonts/MessinaModern-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaModern Light';
+    src: url('../fonts/MessinaModern-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaSerif';
+    src: url('../fonts/MessinaSerif-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MessinaSans Regular';
+    color: #233559;
+  
+}
+.mesinaserif{
+    font-family: 'MessinaSerif';
+    color: #E20511;
+}
+.font-roboto {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+
+}
+.l-container{
+
+    padding: 50px 0;
+}
+
+.title-ba {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'MessinaSans Book';
+    margin-bottom: 0;
+}
+
+.text-blue-ucv {
+    color: #233559;
+}
+
+small {
+    font-size: 10px;
+    font-weight: normal;
+}
+#banner{
+    background: #233559;
+}
+
+.l-container {
+    padding: 60px 0;
+}
+
+.text-one {
+    font-family: "PreloSlab Medium";
+    font-size: 50px;
+    line-height: 50px;
+}
+
+#descripcion-carrera{
+    background: #F2F2F2;
+}
+
+.block-list ul li{
+    margin-bottom: 10px;
+}
+
+.content-box {
+    height: 110px;
+    width: 85%;
+}
+.slick-slide:focus{
+outline: none;
+}
+.preconvalidacion{
+    border: 2px solid #02BFF2;
+    color: #233559; 
+    padding: 5px 15px;
+    background-color: #02BFF2;
+    text-decoration: none;
+
+}
+.programas{
+    border: 2px solid white;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.barra-bottom {
+    position: absolute;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 17px;
+    bottom: 0px;
+    z-index: 0;
+    border-left: 17px solid #02BFF2;
+    border-right: 17px solid #02BFF2;
+}
+.programas:hover{
+    border: 2px solid 233559;
+    color: #233559;
+    background-color: white;
+    transition: ease all .3s;
+  
+}
+.form-control {
+    border-radius: 0;
+    border: 1px solid #233559;
+    height: calc(1.6em + .75rem + 2px)!important;
+    color: #233559;
+    background-color: #FCFAF2;
+    font-family: 'MessinaSans Regular';
+    appearance: auto;
+}
+
+.form-control:focus {
+    border-radius: 0;
+    border: 1px solid #233559;
+    height: calc(2em + .75rem + 2px);
+    color: #233559;
+    background-color: #FCFAF2;
+}
+#banner{
+    padding: 90px 0;
+    padding-bottom: 100px;
+    position: relative;
+}
+.subtitle{
+    font-family: 'MessinaSans Regular';
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 18px;
+}
+.title-banner {
+    font-family: 'MessinaSerif';
+
+    color: #e10e17;
+    font-size: 70px;
+    line-height: 65px;
+}
+.arrow-derecha{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 15px 0 15px 23.6px;
+border-color: transparent transparent transparent #fff;
+}
+.arrow-izquierda{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 15px 23.6px 15px 0;
+border-color: transparent #fff transparent transparent;
+}
+.arrow-derecha{
+    width: 40px;
+    right: -20%;
+    top: 46%;
+    position: absolute;
+    cursor: pointer;
+}
+.arrow-izquierda{
+    width: 40px;
+    left: -20%;
+    top: 46%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.item-slider .img-slider{
+    margin: 0 auto;
+    height: 573px;
+}
+
+.border-bt {
+    border-bottom: 4px solid #e10e17;
+}
+
+.title-form {
+    font-weight: 700;
+    font-family: 'MessinaSans Semibold';
+    border-left: 5px solid #233559;
+    padding-left: 10px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.form-group {
+    margin-bottom: .5rem;
+}
+.h-container{
+    height: 100%;
+}
+
+.label-poli {
+    font-size: 12px;
+    vertical-align: text-top;
+}
+
+
+.text-red-ucv {
+    color: #e10e17;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+
+.img-box {
+    width: 20%;
+}
+
+.title-section {
+    font-family: "PreloSlab Bold";
+}
+
+header {
+    border-bottom: 2px solid #233559;
+    background: #FFFFFF;
+    height: 110px;
+}
+
+
+
+.descripcion-carrera {
+     font-family: 'MessinaSans Light';
+
+}
+
+#form-banner .mb-4 {
+    margin-bottom: 1.2rem !important;
+}
+
+.campo {
+    background-color: #f2f2f2;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.title-ba-one {
+    font-family: 'MessinaSans Light';
+    font-size: 63px;
+    line-height: 63px;
+        padding-bottom: 5px!important;
+}
+
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: 'MessinaSans Book';
+    font-weight: 800;
+    color: #243559;
+}
+
+
+
+
+
+footer {
+    padding: 30px 0;
+    color: #fff;
+    background: #E30613;
+}
+footer a{
+  
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-blue-ucv {
+    color: #243559;
+}
+
+.desc-box {
+    font-weight: 400;
+}
+
+
+
+.btn-form {
+    font-family: 'MessinaSans Semibold';
+
+    border-color: #233559 !important;
+    background: transparent !important;
+        padding: 0.5rem 2.5rem;
+    color: #243559;
+    border-radius: 0;
+    border-width: 1px;
+}
+
+.btn-form:active,
+.btn-form:hover {
+    border-color: #233559 !important;
+    background: #233559 !important;
+    color: white;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.img-mobile-t {
+    display: none;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-box {
+    float: right;
+}
+
+#banner .container {
+    height: 100%;
+}
+
+.bg-banner {
+
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+a {
+    color: #243559;
+    text-decoration: underline;
+}
+
+.content-form {
+    padding: 30px;
+    padding-top: 0px;
+}
+
+
+
+.descripcion-carrera{
+    font-size: 24px;
+    line-height: 35px;
+}
+
+
+.modern{
+    font-family: 'MessinaModern Light';
+    font-size: 28px;
+}
+
+
+
+
+  /* Barra Banner */
+
+.b-bottom{
+    border-bottom: 1px solid #C4C4C4;
+    
+    padding-bottom: 55px;
+
+}
+
+#acreditaciones{
+    background: #233559;
+}
+#acreditaciones li{
+    list-style: none;
+
+}
+#acreditaciones p{
+    color: white;
+     font-family: 'MessinaSans Regular';
+
+}
+.fuente{
+    color: white;
+    font-family: 'MessinaModern';
+    font-size: 16px;
+}
+.flecha-arriba{
+    position: relative;
+    top: -43px;
+    left: 2px; 
+}
+.count{
+    font-size: 80px;
+    color: #E30613;
+    font-family: 'MessinaModern Light';
+}
+.barra-form{
+    display: none;
+        z-index: 9;
+}
+@media (min-width: 1200px) {
+     .container {
+        max-width: 1100px;
+    }
+    #banner .container {
+        max-width: 1000px;
+    }
+    .box-title-banner {
+    position: relative;
+ 
+}
+
+}
+
+
+@media (max-width: 1100px) {
+    .box-title-banner {
+        position: relative;
+        top: initial;
+    }
+    .box-title-banner {
+        margin-left: 60px;
+        left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+  
+
+    .title-ba-one {
+        padding-top: 0;
+        margin-top: 40px;
+    }
+
+    .title-ba {
+        margin-bottom: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fila-pro{
+        flex-direction: column;
+    }
+    .programas{
+       width: 280px;
+       justify-content: center;
+       margin: 0 auto;
+       margin-bottom: 10px;
+    }
+    #descripcion-carrera {
+        background: #F2F2F2;
+        border-top: 2px solid #E20511;
+    }
+  
+  
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+  
+    .row-responsive{
+        justify-content: center!important;
+    }
+    .b-bottom{
+        border-bottom: 0px solid #C4C4C4;
+        
+    padding-bottom: 0px;
+
+    }
+   
+    .title-ba-one {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+  
+
+    .img-desk {
+        display: none;
+    }
+
+    .img-mobile-t {
+        display: block;
+    }
+
+    .img-mobile {
+        display: block;
+
+
+    }
+
+    .logo-educa {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .subtitle {
+        font-size: 20px;
+        line-height: 25px;
+      
+    }
+    .title-banner {
+     
+        font-size: 60px;
+        line-height: 55px;
+    }
+   .img-slider{
+       height: auto!important;
+   }
+    .block-right{
+        margin-top: 30px;
+    }
+    .block-left ul, .block-right ul {
+        padding-left: 2rem;
+   
+    }
+    .descripcion-carrera {
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .title-ba {
+        max-width: 272px;
+    }
+
+ 
+
+    header {
+        height: auto;
+    }
+
+    .box-title-banner {
+        position: absolute;
+        bottom: 11%;
+        top: initial;
+    }
+
+   
+
+    .title-ba-one {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    
+    .img-desk-t {
+        display: none;
+    }
+
+
+
+
+
+    .l-container {
+        padding: 30px 0;
+    }
+
+    .no-p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #formu {
+        padding-bottom: 0px;
+    }
+
+
+    .title-section {
+        font-family: "PreloSlab Bold";
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-ba-one {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .nav-elegir li.nav-item {
+        flex: 0 1 100px;
+    }
+    .title-ba-one {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}

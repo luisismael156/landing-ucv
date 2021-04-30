@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+    @font-face {
+        font-family: 'Prelo-Book';
+        src: url(fonts/Prelo-Book.otf);
+    }
+
+    @font-face {
+        font-family: 'Prelo-Book Bold';
+        src: url(fonts/Prelo-Exbd.otf);
+    }
+
+    @font-face {
+        font-family: 'Prelo Slab Bold';
+        src: url(fonts/PreloSlab-Bold.otf);
+    }
+
+    @font-face {
+        font-family: 'Prelo Slab Book';
+        src: url(fonts/PreloSlab-Book.otf);
+    }
+
+    @font-face {
+        font-family: 'Prelo Slab Medium';
+        src: url(fonts/PreloSlab-Medium.otf);
+    }
+
+    body {
+        font-family: 'Prelo Slab Medium';
+    }
+
+    .carousel-caption {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 50px;
+        bottom: 50px;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .title-banner {
+        font-size: 64px;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .arrow-banner {
+        width: 90%;
+        margin-right: -20px;
+    }
+
+    .l-container {
+        padding: 50px 0;
+    }
+
+    .l-container.not-bottom {
+        padding: 50px 0 0px 0px;
+    }
+
+    .text-desc h3 {
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        color: #002855;
+    }
+
+    .text-desc {
+        padding-left: 85px;
+        width: 95%;
+    }
+
+    .text-information {
+        font-family: 'Cairo', sans-serif;
+        font-weight: 400;
+    }
+
+    .form-incribete {
+        padding: 0 50px;
+    }
+
+    #form-register {
+        padding: 50px 30px 20px 30px;
+        background: #E0E0E0;
+        border-radius: 16px;
+    }
+
+    #form-register .form-control {
+        background: #FFFFFF;
+        border-radius: 16px;
+        color: #A3A3A3;
+    }
+
+    .btn-ucv {
+        background: #002855;
+        border-radius: 16px;
+        border: 2px solid #002855;
+        padding: 5px 20px;
+        color: white;
+        position: relative;
+        top: 37px;
+        letter-spacing: 1px;
+    }
+
+    .btn-ucv:hover {
+        background: white;
+        border-radius: 16px;
+        border: 2px solid #002855;
+        color: #002855;
+    }
+
+    .bg-gray-ucv {
+        background: #F2F2F2;
+    }
+
+    .box-container {
+        margin: 25px auto;
+        width: 85%;
+    }
+
+    .text-blue-ucv {
+        color: #154476;
+    }
+
+    .text-box {
+        font-size: 18px;
+    }
+
+    .colum-1 {
+        font-size: 30px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .colum-1 h1 {
+        font-size: 30px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+    }
+
+    .colum-2 h1 {
+        font-family: 'Cairo', sans-serif;
+        font-size: 40px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+
+    .colum-2 span {
+        font-family: 'Cairo', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .colum-2 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .colum-1,
+    .colum-2 {
+        margin-bottom: 50px;
+    }
+
+    .colum-1.movilidad {
+        margin-bottom: 30px;
+    }
+
+    .title-desc.colum-1.movilidad h1 {
+        font-family: 'Cairo', sans-serif;
+        font-weight: 400;
+    }
+
+    footer {
+        background-color: #002855;
+        padding: 35px 0;
+    }
+
+    @media (max-width: 1190px) {
+        .title-banner {
+
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .colum-2,
+        .mt-r-30 {
+            margin-top: 30px;
+        }
+
+        .colum-1,
+        .colum-2 {
+            margin-bottom: 10px;
+        }
+
+        .form-incribete {
+            margin-top: -100px;
+        }
+
+        .row-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .index-top {
+            z-index: 9999999999;
+        }
+
+        #banner .col-md-7 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .title-banner {
+            font-size: 60px;
+            padding-left: 0px;
+        }
+
+        .arrow-banner {
+            width: 100%;
+            margin-left: -20px;
+        }
+
+        .carousel-caption {
+            top: -42%;
+        }
+    }
+
+    @media (max-width: 590px) {
+
+        .colum-1,
+        .colum-2 {
+
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .box-container {
+            width: 100%;
+        }
+
+        .text-desc {
+            padding-left: 0;
+            width: 100%;
+        }
+
+        .title-banner {
+            font-size: 40px;
+
+        }
+
+        .form-incribete {
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .title-banner {
+            font-size: 30px;
+
+        }
+    }
+</style>
+
+<body>
+    <header class="bg-header">
+        <div class="container">
+            <div class="row justify-content-between py-3 align-items-center">
+                <div class="col-6">
+                    <picture>
+                        <img src="logo-header-ucv.svg" class="img-fluid" alt="">
+                    </picture>
+                </div>
+                <div class="col-4">
+                    <picture>
+                        <img src="logo-educacion.svg" class="img-fluid " alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="banner-1-responsive.jpg">
+                            <img class="d-block w-100" src="banner-1.png" alt="First slide">
+                        </picture>
+
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="text-banner">
+                                        <h1 class="title-banner"> ¿EL TIEMPO SE DETUVO EN TU INSTITUTO?</h1>
+                                        <img src="arrow-banner.png" class="img-fluid arrow-banner" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="view">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="banner-2-responsive.jpg">
+                            <img class="d-block w-100" src="banner-2.png" alt="First slide"> </picture>
+
+                    </div>
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="text-banner">
+                                        <h1 class="title-banner"> ¿TU UNIVERSIDAD TE DEJA EN VISTO?</h1>
+                                        <img src="arrow-banner.png" class="img-fluid arrow-banner" alt="">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <!-- <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> -->
+            <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </section>
+    <main>
+        <section id="trasladate-ucv" class="l-container not-bottom">
+            <div class="container">
+                <div class="row row-reverse">
+                    <div class="col-lg-6">
+                        <picture>
+                            <img src="message-trasladate.png" class="img-fluid d-block mx-auto mt-r-30" alt="">
+                        </picture>
+                        <div class="text-desc">
+                            <h3> Y encuentra tu segundo impulso para salir adelante.</h3>
+                        </div>
+                        <picture>
+                            <img src="phone-img.png" class="img-fluid d-block mx-auto mt-5" alt="">
+                        </picture>
+                    </div>
+                    <div class="col-lg-6 index-top">
+                        <div class="form-incribete">
+                            <form id="form-register">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="*DNI">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre (s)*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Apellidos*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Correo electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Número de celular">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Carrera">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Modalidad de ingreso">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Instituto de procedencia">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Año de Egreso">
+                                </div>
+                                <div class="btn-submit text-center">
+                                    <button type="submit" class="btn btn-primary btn-ucv">INCRIBIRME</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="text-information text-center mt-5">
+                            <p>Regístrate para recibir toda la información sobre nuestras carreras, no olvides revisar
+                                nuestros términos y condiciones en el siguiente <a href="">enlace</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="razones-estudiar" class="l-container bg-gray-ucv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="title-section colum-1">
+                            <h1 class="text-blue-ucv">CONOCE LAS RAZONES PARA ESTUDIAR EN LA UCV.</h1>
+                        </div>
+                        <div class="box-container d-flex align-items-center">
+                            <img src="docente-icon.svg" alt="">
+                            <span class="text-box text-blue-ucv"><strong>90% de docentes con maestría y
+                                    doctorado.</strong></span>
+                        </div>
+                        <div class="box-container d-flex align-items-center">
+                            <img src="lab-icon.svg" alt="">
+                            <span class="text-box text-blue-ucv"><strong>Laboratorios especializados <br></strong>para
+                                un mejor
+                                contacto con tu carrera </span>
+                        </div>
+                        <div class="box-container d-flex align-items-center">
+                            <img src="incentivos-icon.svg" alt="">
+                            <span class="text-box text-blue-ucv"><strong>Motivación e incentivos</strong> por<br>
+                                responsabilidad
+                                académica y financiera.</span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="title-section colum-2">
+                            <h1>Blackboard<br><span>ULTRA UCV</span></h1>
+                        </div>
+                        <div class="box-container d-flex align-items-center">
+                            <img src="blackboard-icon.svg" alt="">
+                            <span class="text-box text-blue-ucv"><strong>90% de docentes con maestría y
+                                    doctorado.</strong></span>
+                        </div>
+                        <div class="box-container d-flex align-items-center">
+                            <img src="tutotia-icon.svg" alt="">
+                            <span class="text-box text-blue-ucv"><strong>Laboratorios especializados <br></strong>para
+                                un mejor
+                                contacto con tu carrera </span>
+                        </div>
+                        <div class="box-container d-flex align-items-center">
+                            <img src="talleres.svg" alt="">
+                            <span class="text-box text-blue-ucv"><strong>Motivación e incentivos</strong> por<br>
+                                responsabilidad
+                                académica y financiera.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="movilidad-academica" class="l-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="title-section colum-1 movilidad">
+                            <h1 class="text-blue-ucv">MOVILIDAD ACADÉMICA</h1>
+                        </div>
+                        <div class="title-desc colum-1 movilidad">
+                            <h1 class="text-blue-ucv">VIVE UNA EXPERIENCIA ACADÉMICA INTERNACIONAL</h1>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="box-container d-flex align-items-center">
+                            <img src="mundo-icon.svg" alt="">
+                            <span class="text-box text-blue-ucv">Contamos con más de 100 convenios
+                                internacionales.</span>
+                        </div>
+                        <div class="box-container d-flex align-items-center">
+                            <img src="avion-icon.svg" alt="">
+                            <span class="text-box text-blue-ucv">2130 docentes y estudiantes viajaron al extrajero.
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <p class="text-center text-white">© 2020 UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS RESERVADOS.
+                        <br>POLÍTICAS DE PRIVACIDAD | TÉRMINOS DE USO</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

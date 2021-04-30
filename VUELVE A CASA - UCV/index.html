@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <title>Hello, world!</title>
+    <style>
+        @font-face {
+            font-family: "Prelo Book";
+            src: url(fonts/Prelo-Book.otf);
+        }
+
+        @font-face {
+            font-family: "Prelo Exbd";
+            src: url(fonts/Prelo-Exbd.otf);
+        }
+
+        @font-face {
+            font-family: "PreloSlab Bold";
+            src: url(fonts/PreloSlab-Bold.otf);
+        }
+
+        @font-face {
+            font-family: "PreloSlab Book";
+            src: url(fonts/PreloSlab-Book.otf);
+        }
+
+        @font-face {
+            font-family: "PreloSlab Medium";
+            src: url(fonts/PreloSlab-Medium.otf);
+        }
+
+        body {
+            font-family: "PreloSlab Medium";
+
+            background: #efece7;
+        }
+
+        #banner {
+            background-image: url(img/banner.png);
+            padding-top: 50px;
+            padding-bottom: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .l-container {
+            padding: 60px 0;
+        }
+
+        .text-one {
+            font-family: "PreloSlab Medium";
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .content-box {
+    height: 110px;
+    width: 85%;
+}
+        .form-control {
+            border-radius: 13px;
+        }
+
+        .title-banner {
+            font-family: "PreloSlab Bold";
+            color: #e10e17;
+            font-size: 70px;
+            line-height: 65px;
+        }
+
+        .border-bt {
+            border-bottom: 4px solid #e10e17;
+        }
+
+        #form-banner {
+            background: rgba(224, 224, 224, 0.5);
+            padding: 30px;
+
+            border-radius: 13.4609px;
+        }
+
+        .label-poli {
+            font-size: 12px;
+            vertical-align: text-top;
+        }
+
+        .btn-ucv {
+            background: #e10e17;
+            border-radius: 13.4609px;
+            border: #e10e17;
+        }
+
+        .btn-ucv:hover {
+            background: #e10e17;
+            border-radius: 13.4609px;
+            border: #e10e17;
+        }
+
+        .btn-ucv:active {
+            background: #e10e17 !important;
+            border-radius: 13.4609px;
+            border: #e10e17 !important;
+        }
+
+        .text-red-ucv {
+            color: #e10e17;
+        }
+
+        #formu {
+            margin-top: 5rem;
+        
+        }
+        .img-box {
+    width: 20%;
+}
+        .title-section {
+            font-family: "PreloSlab Bold";
+        }
+        .restr{
+            font-family: "PreloSlab Bold";
+        }
+        #beneficios{
+            color: #243559;
+        }
+        .book{
+            font-family: "PreloSlab Book";
+        }
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        #form-banner .mb-4 {
+            margin-bottom: 1.2rem !important;
+        }
+        #programa{
+            background-color: white;
+        }
+        .f-18 {
+            font-size: 18px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-end;
+        }
+#mas-beneficios{
+    background: #154476;
+}
+footer{
+    background-color: #4F4F4F;
+    padding: 40px 0;
+}
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1000px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .row-rever {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="banner">
+        <div class="container">
+            <div class="row row-rever">
+                <div class="col-md-8">
+                    <h1 class="title-banner mb-5 pt-5">
+                        <span class="text-white text-one d-block">VUELVE A <br />LA UCV,<br /></span>
+                        VUELVE<br />
+                        <span class="border-bt">A CASA.</span>
+                    </h1>
+                    <form id="formu" class="d-block">
+                        <div id="form-banner">
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <input id="nombre" name="nombre" type="text"
+                                                class="form-control form-control-sm" placeholder="Nombre (s)*"
+                                                required="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <input id="apellidoPA" name="apellidoPA" type="text"
+                                                class="form-control form-control-sm" placeholder="Apellidos*"
+                                                required="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <input type="text" id="celular" name="celular"
+                                                class="form-control form-control-sm" placeholder="Numero de celular*"
+                                                required=""
+                                                pattern="^((9)[0-9]{8})|((9)[0-9]{2}[ ][0-9]{3}[ ][0-9]{3})|((9)[0-9]{2}[-][0-9]{3}[-][0-9]{3})|([1-9]{1}([0-9]{1}|[0-9]{2})(9)[0-9]{8})|([1-9]{1}([0-9]{1}|[0-9]{2})[ ](9)[0-9]{8})|([1-9]{1}([0-9]{1}|[0-9]{2})[ ](9)[0-9]{2}[ ][0-9]{3}[ ][0-9]{3})|([1-9]{1}([0-9]{1}|[0-9]{2})[-](9)[0-9]{2}[-][0-9]{3}[-][0-9]{3})|([1-9]{1}([0-9]{1}|[0-9]{2})[-](9)[0-9]{8})|([+][1-9]{1}([0-9]{1}|[0-9]{2})(9)[0-9]{8})|([+][1-9]{1}([0-9]{1}|[0-9]{2})[ ](9)[0-9]{8})|([+][1-9]{1}([0-9]{1}|[0-9]{2})[ ](9)[0-9]{2}[ ][0-9]{3}[ ][0-9]{3})|([+][1-9]{1}([0-9]{1}|[0-9]{2})[-](9)[0-9]{2}[-][0-9]{3}[-][0-9]{3})|([+][1-9]{1}([0-9]{1}|[0-9]{2})[-](9)[0-9]{8})|\(([1-9]{1}([0-9]{1}|[0-9]{2})\)(9)[0-9]{8})|\(([1-9]{1}([0-9]{1}|[0-9]{2})\)([ ]|[-])(9)[0-9]{8})|\(([1-9]{1}([0-9]{1}|[0-9]{2})\)[ ](9)[0-9]{2}[ ][0-9]{3}[ ][0-9]{3})|\(([1-9]{1}([0-9]{1}|[0-9]{2})\)[-](9)[0-9]{2}[-][0-9]{3}[-][0-9]{3})|\([+]([1-9]{1}([0-9]{1}|[0-9]{2})\)(9)[0-9]{8})|\([+]([1-9]{1}([0-9]{1}|[0-9]{2})\)([ ]|[-])(9)[0-9]{8})|\([+]([1-9]{1}([0-9]{1}|[0-9]{2})\)[ ](9)[0-9]{2}[ ][0-9]{3}[ ][0-9]{3})|\([+]([1-9]{1}([0-9]{1}|[0-9]{2})\)[-](9)[0-9]{2}[-][0-9]{3}[-][0-9]{3})|((9)[0-9]{2}([ ]|[-])[0-9]{6})"
+                                                onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57"
+                                                minlength="9" maxlength="9" />
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <span class="fa fa-map-marker form-control-icon"></span>
+                                            <select id="campus" class="form-control form-control-sm" required="">
+                                                <option disabled="" selected="" value="">Selecciona Programa</option>
+                                                <option value="demo">demo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <span class="fa fa-map-marker form-control-icon"></span>
+                                            <select id="campus" class="form-control form-control-sm" required="">
+                                                <option disabled="" selected="" value="">¿Por qué interrumpiste tus
+                                                    estudios?</option>
+                                                <option value="demo">demo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <input type="text" id="dni" name="dni" class="form-control form-control-sm"
+                                                placeholder="DNI *" required=""
+                                                onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57"
+                                                minlength="8" maxlength="8" />
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <input type="email" id="email" name="email"
+                                                class="form-control form-control-sm" placeholder="Correo Electronico"
+                                                required="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <span class="fa fa-map-marker form-control-icon"></span>
+                                            <select id="campus" class="form-control form-control-sm" required="">
+                                                <option disabled="" selected="" value="">Selecciona tu Campus</option>
+                                                <option value="Ate">Ate</option>
+                                                <option value="Callao">Callao</option>
+                                                <option value="Chepén">Chepén</option>
+                                                <option value="Chiclayo">Chiclayo</option>
+                                                <option value="Chimbote">Chimbote</option>
+                                                <option value="Huaraz">Huaraz</option>
+                                                <option value="Los Olivos">Los Olivos</option>
+                                                <option value="Moyobamba">Moyobamba</option>
+                                                <option value="Piura">Piura</option>
+                                                <option value="San Juan de Lurigrancho">San Juan de Lurigrancho</option>
+                                                <option value="Tarapoto">Tarapoto</option>
+                                                <option value="Trujillo">Trujillo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12 mb-4">
+                                            <select id="curso" class="form-control form-control-sm" required="">
+                                                <option disabled="" selected="" value="">Último semestre de estudios
+                                                </option>
+                                                <option value="Computación l">Computación l</option>
+                                                <option value="Computación ll">Computación ll</option>
+                                                <option value="Computación lll">Computación lll</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <input id="enviar" type="submit" class="btn btn-primary btn-ucv mt-4"
+                                value="ENVIAR DATOS" />
+                            <div class="form-group form-check col-lg-12 mb-4 text-white mt-3 pl-4">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required="" />
+                                <label class="form-check-label label-poli" for="exampleCheck1">He leído y acepto la
+                                    <a href="https://trilce.ucv.edu.pe/politicas/PoliticaPrivacidad.html"
+                                        target="_blank" class="politica-check">política de protección de
+                                        datos.</a></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 logo">
+                    <img src="img/logo.svg" class="img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="beneficios" class="l-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h2 class="title-section mb-4">
+                        <span class="text-red-ucv">VUELVE,</span> CON MÁS BENEFICIOS
+                    </h2>
+                    <p class="f-18 mb-5">
+                        Todo beneficio otorgado al estudiante se producirá exclusivamente
+                        previo pago de matrícula y primera cuota.
+                    </p>
+                </div>
+                <div class="col-md-9">
+                    
+                    <div class="row mb-4">
+                        <div class="col-sm-1">
+                            <img src="img/cobros.svg" class="mx-auto d-block" alt="" />
+                        </div>
+                        <div class="col-sm-11 pl">
+                            <p class="f-18"> Se establecerá el costo cero en cobros por concepto de solicitud
+                                de reinicio de estudios.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-sm-1">
+                            <img src="img/Hoja.svg" class="mx-auto d-block"  alt="" />
+                        </div>
+                        <div class="col-sm-11 pl">
+                            <p class="f-18"> Derecho a trámite, penalidad por llevar cursos por 2.ª matrícula, 3.ª matrícula y 4.ª matrícula y solicitud de asignación de escala, a favor de los estudiantes que se acojan al Programa, para el semestre académico 2020-II.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-sm-1">
+                            <img src="img/ingles.svg"  class="mx-auto d-block"  alt="" />
+                        </div>
+                        <div class="col-sm-11 pl">
+                            <p class="f-18"> Podrá llevar un módulo de inglés o computación de forma gratuita, en los meses de junio, julio o agosto de 2020, registrando su matrícula en el inicio más cercano luego de su reincorporación a la UCV.</p>
+                           
+                        </div>
+                    </div>
+
+                    <h5 class="text-red-ucv restr mt-5">RESTRICCIONES</h5>
+                    <p>Los descuentos concedidos son aplicables solo al pago de las cuotas mensuales y para mantenerlos el beneficiario deberá cumplir con estudiar regularmente, y de manera continua a partir del semestre académico 2020-II observando el promedio ponderado mínimo, requerido por el reglamento de escalas de pensiones, para su categoría.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="programa" class="l-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title-section mb-5">
+                        ¿DE QUÉ TRATA <span class="text-red-ucv">ESTE PROGRAMA?</span>
+                    </h2>
+                    <p class="f-18 mb-4">Mantener para el semestre académico 2020-II la categoría asignada en el último semestre académico matriculado, a favor de los estudiantes que se encontraban matriculados desde el 2.°ciclo en adelante.</p>
+                    <p class="f-18 mb-4">Establecer para aquellos estudiantes que, estando matriculados en el 1.er ciclo, realizaron su reserva, registren 0 créditos aprobados, y realicen su reincorporación en el semestre académico 2020-II, les corresponde la asignación de la Categoría A, de la escala de pensiones para ingresantes 2020-II.</p>
+                    <p class="f-18 mb-4">Establecer el descuento de S/100 en las cuotas mensuales, a favor de los estudiantes que se acojan al Programa UCV Contigo matriculados desde el 2.° ciclo en adelante.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="mas-beneficios" class="l-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h2 class="title-section mb-5 text-white">
+                        MÁS BENEFICIOS
+                    </h2>
+                  
+                </div>
+                <div class="col-md-11 mt-1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box d-flex">
+                                <div class="img-box pr-3">
+                                    <img src="img/blackborad.svg"class="img-fluid d-block mx-auto"  alt="">
+                                </div>
+                                <div class="content-box text-white">
+                                    <h5 class="mb-1">BLACKBOARD ULTRA </h5>
+                                    <p class="f-18 book">moderna plataforma para tus clases sean de otro nivel.</p>
+                                </div>
+                            </div>
+                            <div class="box d-flex">
+                                <div class="img-box pr-3">
+                                    <img src="img/datos.svg" class="img-fluid d-block mx-auto" alt="">
+                                </div>
+                                <div class="content-box text-white">
+                                    <h5 class="mb-1">DATOS GRATIS</h5>
+                                    <p class="f-18 book">para que no tengas excusas.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box d-flex">
+                                <div class="img-box pr-3">
+                                    <img src="img/blackborad.svg"class="img-fluid d-block mx-auto"  alt="">
+                                </div>
+                                <div class="content-box text-white">
+                                    <h5 class="mb-1">DOCENTES ESPECIALIZADOS</h5>
+                                    <p class="f-18 book">con maestrías y doctorados.</p>
+                                </div>
+                            </div>
+                            <div class="box d-flex">
+                                <div class="img-box pr-3">
+                                    <img src="img/blackborad.svg" class="img-fluid d-block mx-auto" alt="">
+                                </div>
+                                <div class="content-box text-white">
+                                    <h5 class="mb-1">CONVENIOS INTERNACIONALES</h5>
+                                    <p class="f-18 book">para una doble titulación.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="datos-extras" class="l-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title-section mb-5">
+                        DATOS <span class="text-red-ucv">EXTRAS</span>
+                    </h2>
+                    <p class="f-18 mb-4"> Los estudiantes que reiniciaron sus estudios y contaban con una deuda pendiente, podrán solicitar el fraccionamiento de la deuda y se hará efectiva hasta el semestre académico 2021-I, el cual estará en correspondencia al monto de esta y previa evaluación realizada por la Dirección General de cada campus.</p>
+                    <p class="f-18 mb-4">Los estudiantes que realizaron reserva de matrícula y el pago completo del semestre académico, podrán llevar dos módulos de inglés y/o de computación de forma gratuita, registrando su matrícula en el inicio más cercano luego de su reinicio de estudios.</p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class=""> 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 mb-4">
+                    <img src="img/footer-log.svg" class="img-fluid mx-auto d-block" alt="">
+                </div>
+                <div class="col-md-8 mt-4">
+                    <p class=" text-center text-white book">© 2020 UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS RESERVADOS. POLÍTICAS DE PRIVACIDAD | TÉRMINOS DE USO</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

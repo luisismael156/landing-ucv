@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <style>
+        @font-face {
+    font-family: "Decima Regular";
+    src: url(fonts/decima-regular.otf);
+}
+
+
+
+@font-face {
+    font-family: "Prelo Exbd";
+    src: url(fonts/PreloSlab-ExBd.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Bold";
+    src: url(fonts/PreloSlab-Bold.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Book";
+    src: url(fonts/PreloSlab-Book.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Medium";
+    src: url(fonts/PreloSlab-Medium.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Semi";
+    src: url(fonts/PreloSlab-SemiBold.otf);
+}
+body{
+    font-family: "Decima Regular";
+}
+.container-header{
+
+    background-image: url(img/banner-robotica.png);
+    background-size: cover;
+    background-position-x: center;
+  
+}
+.menu-navegacion {
+    background: #233559;
+}
+.prelo-exbold{
+    font-family: "Prelo Exbd";
+}
+.prelo-medium{
+    font-family: "PreloSlab Medium";
+}
+.prelo-bold{
+    font-family: "PreloSlab Bold";
+}
+.prelo-semibold{
+    font-family: "PreloSlab Semi";
+}
+.l-container{
+    padding: 60px 0;
+}
+.contenido-header{
+    padding: 150px 0;
+    padding-bottom: 100px;
+}
+.title-banner{
+    font-family: "Prelo Exbd";
+    color: white;
+    font-size: 55px;
+}
+.triangle{
+    position: absolute;
+    top: -58px;
+    margin-left: 15px;
+  
+ 
+}
+.navbar {
+  
+    padding: 1.2rem 0;
+}
+#objetivo-programa{
+    background: #233559;
+    position: relative;
+}
+.contenido-programa h3{
+color: white;
+}
+.contenido-programa h1{
+    color: #04BEFB;
+    font-size: 45px;
+    }
+    .container-form{
+        padding: 35px 45px;
+        background: #7E898E;
+border-radius: 13px;
+margin-top: -50%;
+    }
+    .barra{
+        margin-top: 100px;
+        margin-bottom: 70px;
+        border-top: 1px solid #04BEFB;
+
+    }
+    .form-group,.form-control {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        color: #7E898E!important;
+        border-radius: 8px;
+    }
+    .checkpolitica{
+        color: white!important;
+        font-family: 'Cairo', sans-serif;
+        font-size: 15px;
+
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #7E898E!important;
+        opacity: 1; /* Firefox */
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #7E898E!important;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #7E898E!important;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+      }
+      .btn-inscribirme, .btn-inscribirme:hover,.btn-inscribirme:focus,.btn-inscribirme:active{
+        font-family: "PreloSlab Bold";
+        background: #04BEFB!important;
+    border-radius: 8px;
+    padding: 10px 25px;
+    border-color: #04BEFB!important;
+
+      }
+      .niño-robotica{
+        position: relative;
+    top: -120px;
+      }
+      footer{
+        background: #7E898E;
+        padding: 40px 0;
+      }
+      footer p{
+          margin-bottom: 0;
+          font-family: 'Cairo', sans-serif;
+
+          
+      }
+      footer a{
+        color: white;
+        text-decoration: underline;
+        
+    }
+    @media (min-width: 1600px){
+        header {
+           
+        }
+
+    }
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 960px;
+}}
+@media (min-width: 768px){
+    .title-banner {
+        
+        width: 90%;
+    }}
+
+    @media (max-width: 991px){
+        .niño-robotica{
+            display: none;
+        }
+        .contenido-programa{
+            margin-top: 40px;
+        }
+        .barra {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-top: 1px solid #04BEFB;
+        }
+       
+        .contenido-header {
+            padding-top: 100px;
+            padding-bottom: 180px;
+        }
+        .row-reverse{
+            
+            flex-direction: column-reverse;
+        }
+        .container-form {
+            
+            margin-top: -150px;
+        }
+        
+    }
+    @media (max-width: 767px){
+        footer{
+            text-align: center;
+            
+        }
+        footer img{
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        .img-logo{
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        .logos-cert{
+            margin-top: 15px;
+        }
+
+    }
+    @media (max-width: 576px){
+        .contenido-programa h3 {
+          
+            font-size: 25px;
+        }
+        .contenido-programa h1 {
+         
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 490px){
+        
+        .contenido-header {
+            padding-top: 70px;
+        }
+        form h2{
+            font-size: 28px;
+        }
+        .container-form {
+            padding: 30px 30px;
+        }
+        .title-banner {
+            
+            font-family: "Prelo Exbd";
+            color: white;
+            font-size: 45px;
+        }
+    }
+
+    @media (max-width: 390px){
+        .title-banner {
+            
+            font-family: "Prelo Exbd";
+            color: white;
+            font-size: 40px;
+        }
+    }
+    </style>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-navegacion">
+            <div class="container">
+                <nav class="navbar nav-header navbar-expand-lg nav-ucv navbar-light d-flex justify-content-between">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="img/logo-CIS.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                    <!-- <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link nav scrollTo" href="#programa-computacion">PROGRAMA DE COMPUTACIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav scrollTo" href="#cursos-programa">CURSOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav scrollTo" href="#certificaciones">CERTFICACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav" href="contacto.php">CONTACTOS</a>
+                        </li>
+                        <li class="nav-item active-cta fe-pulse-w-pause ">
+    
+                            <a class="nav-link" data-toggle="modal" data-target="#modal-form" href="#">ESCRÍBENOS</a>
+                        </li>
+    
+                    </ul>
+                </div> -->
+                    <div class="logo-cv">
+                        <img src="img/icon-ucv.svg" alt="" class="img-fluid">
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <div class="container-header">
+        
+        <div class=" container">
+
+            <div class="row contenido-header">
+                <div class="col-lg-5">
+                    <div class="box-title">
+                        <h1 class="title-banner">PEQUEÑOS CREADORES </h1>
+                        <img src="img/grandes-ingenieros.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <img src="img/niño-robotica.png" class="img-fluid niño-robotica" alt="">
+                    </div>
+
+            </div>
+        </div>
+    
+    </div>
+    </header>
+    <section id="objetivo-programa" class="l-container">
+       
+
+        <div class="container">
+            <div class="row row-reverse">
+                <img src="img/triangle.svg" class="img-fluid triangle" alt="">
+                <div class="col-lg-6">
+                    <div class="contenido-programa">
+                        <h3 class="prelo-medium">Programa de verano</h3>
+                        <h1 class="prelo-exbold">de Robótica
+                            y Computación
+                            para niños</h1>
+                        <p class="text-white pt-2">El programa de verano está dirigido a niños de 7 a 14 años, incluye un paquete integral de cursos de inglés y Computación para desarrollar competencias globales indispensables en la formación académica de los niños, estos cursos permitirán potenciar y fortalecer sus habilidades y destrezas en el idioma extranjero y en el uso de las TICs.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="container-form">
+                        <form>
+                            <h2 class="text-white text-center mb-4 col-sm-9 col-12 col mx-auto prelo-bold">INSCRÍBETE
+                                AHORA</h2>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nombres y apellidos*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Celular*" name="celular" pattern=".{0}|.{9,}" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="9" minlength="9" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Correo electrónico*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="DNI*" name="dni" pattern=".{0}|.{8,}" oninput="this.value = this.value.replace(/[^0-8.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="8" minlength="8" required="">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                 <option disabled="" selected="" value="">Campus</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                             
+                            <div class="form-group mt-5 text-center">
+                                <button type="submit" class="btn btn-primary btn-inscribirme">INSCRIBIRME</button>
+                            </div>
+                         
+                            <div class="form-group form-check checkpolitica mt-4">
+                                <input type="checkbox" class="form-check-input" id="politica">
+                                <label class="form-check-label" for="politica">He leído y acepto la política de protección de datos.</label>
+                              </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="barra">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 class="text-white prelo-semibold">Convenios internacionales</h3>
+                </div>
+                <div class="col-md-7">
+                    <div class="row logos-cert align-items-center">
+                        <div class="col-sm-3">
+                            <img class="img-fluid img-logo" src="img/logo-microsoft.svg" alt="">
+                        </div>
+                        <div class="col-sm-3">
+                            <img class="img-fluid img-logo" src="img/logo-certiport.svg" alt="">
+                        </div>
+                        <div class="col-sm-3">
+                            <img class="img-fluid img-logo" src="img/logo-pearson.svg" alt="">
+                        </div>
+                        <div class="col-sm-3">
+                            <img class="img-fluid img-logo" src="img/logo-cisco.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--  -->
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6">
+                    <p class="text-white">© 2020 UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS RESERVADOS.
+                        <a href="https://trilce.ucv.edu.pe/politicas/PoliticaPrivacidad.html" target="_blank">POLÍTICAS
+                         DE PRIVACIDAD</a>  </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/logo-footer.svg" class="img-fluid" alt="">
+    
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!--  -->

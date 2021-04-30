@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SOMOS UCV | Admisión" />
+    <meta property="og:description"
+        content="Admisión. Estudia en la Universidad César Vallejo carreras universitarias que el mercado laboral requiere. ¡Preinscríbete Aquí!" />
+    <meta property="og:image" itemprop="image" content="https://www.somosucv.edu.pe/img/og.jpg" />
+    <meta property="og:image:alt" content="https://www.somosucv.edu.pe/img/og.jpg" />
+
+    <!-- imports head -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="assets/css/style.css?v=30" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PGQ6BCP');</script>
+    <!-- End Google Tag Manager -->
+
+    <title>Formación para adultos</title>
+
+    <style>
+        #banner {
+            background-image: url(assets/img/banner-fpa.jpg);
+            background-size: cover;
+            background-position: center;
+            background-position-y: inherit;
+            height: calc(100vh - 110px);
+            position: relative;
+        }
+
+        @media (max-width: 575px) {
+            #banner {
+                background-image: none;
+            }
+
+            .bg-banner {
+                background-image: url(assets/img/banner-mobile-fpa.jpg);
+                background-size: cover;
+                height: 546px;
+                flex-direction: column;
+                /* height: 100%; */
+                justify-content: space-between;
+                display: flex;
+                position: relative;
+                padding: 0;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ6BCP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="home-area" id="home_page">
+        <header class="py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-6">
+
+                        <img src="assets/img/logo-ucv.svg" alt="" class="img-fluid img-desk">
+                        <img src="assets/img/icon-ucv.svg" alt="" class="img-fluid img-mobile">
+
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <div class="btn-box">
+                            <img src="assets/img/logo-licenciada.svg?v=2" alt="" class="img-fluid">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+        <section id="banner">
+            <div class="barra-left"></div>
+            <div class="barra-bottom"></div>
+
+
+            <div class="barra-right one"></div>
+            <div class="barra-right two"></div>
+            <div class="barra-right three"></div>
+            <img src="assets/img/mallas.svg" class="img-fluid mallas" alt="">
+            <img src="assets/img/mallas-mobile.svg" class="img-fluid mallas-mobile" alt="">
+
+
+            <div class="container">
+                <div class="row h-container">
+                    <div class="col-md-12">
+                        <div class="row ">
+                            <div class="col-lg-7 bg-banner">
+                                <div class="barra-right one"></div>
+                                <div class="barra-right two"></div>
+                                <div class="barra-right three"></div>
+                                <div class="barra-bottom"></div>
+                                <div class="box-title-banner wow animate__animated animate__fadeIn">
+                                    <h1 class="text-white font-roboto title-ba-one pb-2">Formación<br>
+                                        para adultos</h1>
+                                    <h5 class="title-ba text-white">si eres mayor de 21 años o egresado técnico puedes
+                                        ser parte de nuestro programa.
+                                    </h5>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-5 no-p wow animate__animated animate__fadeIn">
+                                <div id="form-banner">
+
+
+                                    <form id="formu" class="d-block" action="enviar.php" method="post">
+                                        <h5 class="text-blue-ucv title-form">Déjanos tus datos y descarga nuestro plan
+                                            de estudios</h5>
+                                        <div class="form-group mt-4">
+                                            <input type="text" class="form-control campo" placeholder="DNI" name="dni"
+                                                required pattern="[0-9]+"
+                                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                                maxlength="8" minlength="8">
+                                        </div>
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control campo" placeholder="Nombres"
+                                                name="nombres" required>
+                                        </div>
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control campo" placeholder="Apellidos"
+                                                name="apellidos" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control campo"
+                                                placeholder="Correo electrónico" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control campo"
+                                                placeholder="Número de celular" name="celular" required
+                                                pattern=".{0}|.{9,}"
+                                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                                maxlength="9" minlength="9">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="form-control campo" id="campus" name="sede" required>
+                                                <option value="" selected disabled hidden>Campus</option>
+                                                <option value="Chiclayo">Chiclayo</option>
+                                                <option value="Los Olivos">Los Olivos</option>
+                                                <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                                <option value="Tarapoto">Tarapoto</option>
+                                                <option value="Trujillo">Trujillo</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="condicion" required>
+                                            <label class="form-check-label" for="condicion">He leído y acepto las <a
+                                                    href="https://trilce.ucv.edu.pe/politicas/PoliticaPrivacidad.html"
+                                                    target="_blank">políticas de
+                                                    privacidad.</a>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-form mt-2">Enviar</button>
+
+
+                                        <input type="hidden" name="landing" value="FPA />
+                                        <input type="hidden" name="source" value="<?php echo $source;?>" />
+                                        <input type="hidden" name="carrera" value="FPA" />
+                                        <input type="hidden" name="url" value="<?php echo $url;?>" />
+
+
+                                    </form>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="descripcion-carrera" class="l-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <h5 class="descripcion-carrera wow animate__animated animate__fadeInUp text-center">Te ofrecemos
+                            la posibilidad de estudiar en un horario flexible con una modalidad semipresencial para
+                            obtener el título profesional que mereces.</h5>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="carrera-profesionales" class="l-container">
+            <div class="container">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-12">
+                        <div class="box-title wow animate__animated animate__fadeInUp">
+                            <h1 class="title-block d-flex mb-3 ">Carreras<br> Profesionales
+                            </h1>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row justify-content-between b-bottom pb-5">
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-administracion.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Administración</h3>
+                                <p>Conviértete en un administrador líder y emprendedor, capaz de gestionar y consolidar
+                                    organizaciones dentro de un entorno competitivo, convirtiendo una idea en una
+                                    empresa exitosa a nivel mundial.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-contabilidad.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Contabilidad</h3>
+                                <p>Potencia tus habilidades gerenciales y conviértete en un contador público que maneje
+                                    estratégicamente la información financiera de las empresas, a través de una
+                                    formación profesional que te permitirá contribuir al desarrollo empresarial
+                                    generando valor económico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-derecho.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Derecho</h3>
+                                <p>Sé un profesional con espíritu crítico y reflexivo que te permita resolver y prevenir
+                                    conflictos entre personas, comunidades y naciones, promoviendo una cultura de paz y
+                                    responsabilidad social con visión humanística y ética.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-civil.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Ingeniería
+                                    <br>Civil
+                                </h3>
+                                <p>Te ayudamos a desarrollar tu creatividad y a tener una mejor visión orientada a la
+                                    innovación que te permita ser un ingeniero civil capaz de contribuir al crecimiento
+                                    socioeconómico del país con responsabilidad social para el desarrollo sostenible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-industrial.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Ingeniería
+                                    <br>Industrial
+                                </h3>
+                                <p>Sabemos que anhelas ser un profesional capaz de diseñar sistemas productivos,
+                                    planificar procesos y gestionar empresas con eficiencia y responsabilidad social.
+                                    Por eso, te brindamos una formación integral que te permitirá contribuir con la
+                                    productividad y el desarrollo sostenible del país.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-mecanica.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Ingeniería
+                                    <br>Mecánica Eléctrica
+                                </h3>
+                                <p>Tu interés por la ciencia y la tecnología te convertirá en un profesional capaz de
+                                    crear, abastecer y utilizar adecuadamente la energía eléctrica. Por eso, te
+                                    ofrecemos la formación profesional necesaria para resolver los problemas de sistemas
+                                    mecánico - eléctricos con responsabilidad social y ambiental.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-sistemas.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Ingeniería
+                                    <br>de Sistemas
+                                </h3>                                <p> Construye y mejora sistemas de información en las organizaciones para una toma de decisiones más eficiente, con altos estándares de calidad y responsabilidad social. Te brindamos las herramientas teóricas y prácticas necesarias para el diseño de soluciones informáticas viables.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-negocios.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Negocios<br>
+                                    Internacionales
+                                </h3>                                   <p>Aprende a gestionar y ejecutar planes de negocios que contribuyan a la dinámica del intercambio comercial y económico entre organizaciones internacionales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-psicologia.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Psicología</h3>
+                                <p>Explora conceptos referidos al carácter y personalidad del individuo a través de diversas metodologías y conviértete en un psicólogo orientado a la investigación e intervención psicológica de las personas en los diferentes ámbitos de su vida con la finalidad de lograr su bienestar y equilibrio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-ambiental.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Ingeniería<br>
+                                    Ambiental</h3>
+                                <p> Construye y mejora sistemas de información en las organizaciones para una toma de decisiones más eficiente, con altos estándares de calidad y responsabilidad social. Te brindamos las herramientas teóricas y prácticas necesarias para el diseño de soluciones informáticas viables.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-comunicacion.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Ciencias de la<br>
+                                    Comunicación</h3>
+                                <p>Aprende a gestionar y ejecutar planes de negocios que contribuyan a la dinámica del intercambio comercial y económico entre organizaciones internacionales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="card-carrera">
+                            <div class="card-img w-100">
+                                <img src="assets/img/card-marketing.jpg" class="img-fluid w-100 mb-4" alt="">
+                            </div>
+                            <div class="content-card">
+                                <h3 class="title-card mb-3">Marketing y Dirección <br>de Empresas</h3>
+                                <p>Explora conceptos referidos al carácter y personalidad del individuo a través de diversas metodologías y conviértete en un psicólogo orientado a la investigación e intervención psicológica de las personas en los diferentes ámbitos de su vida con la finalidad de lograr su bienestar y equilibrio.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+      <section id="beneficios">
+          <div class="container">
+            <div class="row justify-content-center mb-3 ">
+                <div class="col-md-12">
+                    <div class="box-title wow animate__animated animate__fadeInUp">
+                        <h1 class="title-block d-flex mb-3 ">Beneficios
+                        </h1>
+                    </div>
+
+                </div>
+
+            </div>
+              <div class="row b-bottom pb-5">
+                  <div class="col-md-6">
+                      <div class="box-beneficios row mt-4  wow animate__animated animate__fadeInUp">
+                          <div class="col-1 " >
+                            <img src="assets/img/networking.svg" class="" alt="">
+                          </div>
+                          <div class="col-9 title-col">
+                                <h4 class="">Networking</h4>
+                                <p>para ampliar tu red de contactos.</p>
+                        </div>
+                      </div>
+                      <div class="box-beneficios row mt-4  wow animate__animated animate__fadeInUp">
+                        <div class="col-1 " >
+                          <img src="assets/img/certificaciones.svg" class="" alt="">
+                        </div>
+                        <div class="col-9 title-col">
+                              <h4 class="">Certificaciones Intermedias</h4>
+                              <p>para que trabajes en tu carrera antes de graduarte.</p>
+                      </div>
+                    </div>
+                    <div class="box-beneficios row mt-4  wow animate__animated animate__fadeInUp">
+                        <div class="col-1 " >
+                          <img src="assets/img/grados.svg" class="" alt="">
+                        </div>
+                        <div class="col-9 title-col">
+                              <h4 class="">Grados y Título</h4>
+                              <p>a nombre de la nación para colegiarse al terminar.</p>
+                      </div>
+                    </div>
+                    <div class="box-beneficios row mt-4  wow animate__animated animate__fadeInUp">
+                        <div class="col-1 " >
+                          <img src="assets/img/movilidad.svg" class="" alt="">
+                        </div>
+                        <div class="col-9 title-col">
+                              <h4 class="">Movilidad Académica</h4>
+                              <p>para una enseñanza más globalizada</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6">
+                    <div class="box-beneficios row mt-4  wow animate__animated animate__fadeInUp">
+                        <div class="col-1 " >
+                          <img src="assets/img/asesoria.svg" class="" alt="">
+                        </div>
+                        <div class="col-9 title-col">
+                              <h4 class="">Asesoría de Tesis</h4>
+                              <p>integrada al plan de estudios.</p>
+                      </div>
+                    </div>
+                    <div class="box-beneficios row mt-4  wow animate__animated animate__fadeInUp">
+                        <div class="col-1 " >
+                          <img src="assets/img/convalidacion.svg" class="" alt="">
+                        </div>
+                        <div class="col-9 title-col">
+                              <h4 class="">Convalidación de Estudios</h4>
+                              <p>previos sean técnicos o universitarios.</p>
+                      </div>
+                    </div>
+                    <div class="box-beneficios row mt-4  wow animate__animated animate__fadeInUp">
+                        <div class="col-1 " >
+                          <img src="assets/img/modalidad.svg" class="" alt="">
+                        </div>
+                        <div class="col-9 title-col">
+                              <h4 class="">Modalidad Semipresencial</h4>
+                              <p>con clases presenciales y virtuales.</p>
+                      </div>
+                    </div>
+                    <div class="box-beneficios row mt-4 wow animate__animated animate__fadeInUp">
+                        <div class="col-1 " >
+                          <img src="assets/img/horarios.svg" class="" alt="">
+                        </div>
+                        <div class="col-9 title-col">
+                              <h4 class="">Horarios Flexibles</h4>
+                              <p>para estudiar y trabajar.</p>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+          </div>
+
+
+      </section>
+      <section id="modalidades" class="l-container">
+          <div class="container">
+            <div class="row justify-content-center mb-3 ">
+                <div class="col-md-12">
+                    <div class="box-title wow animate__animated animate__fadeInUp">
+                        <h1 class="title-block d-flex mb-3 ">Modalidades <br>de Admisión
+                        </h1>
+                    </div>
+
+                </div>
+
+            </div>
+              <div class="row justify-content-between">
+                  <div class="col-md-3 mt-4  wow animate__animated animate__fadeInUp">
+                      <div class="box-admision">
+                        <img src="assets/img/modalida-admision.svg" class="mb-3 img-fluid" alt="">
+                        <h4>Examen de
+                          Admisión</h4>
+                          <p>Una modalidad para
+                            personas mayores de
+                            21 años.</p>
+                      </div>
+                   
+
+                  </div>
+                  <div class="col-md-3 mt-4  wow animate__animated animate__fadeInUp">
+                    <div class="box-admision">
+                        <img src="assets/img/modalida-externo.svg" class="mb-3 img-fluid" alt="">
+                        <h4>Traslado
+                            <br>Externo</h4>
+                          <p>Aprueba un mínimo de 4 períodos o 72 créditos
+                            en otra universida</p>
+                      </div>
+                  </div>
+                  <div class="col-md-3 mt-4  wow animate__animated animate__fadeInUp">
+                    <div class="box-admision">
+                        <img src="assets/img/modalida-titulados.svg" class="mb-3 img-fluid" alt="">
+                        <h4>Titulados de
+                            Universidades</h4>
+                          <p>Dirigido a profesionales que quieran tener una segunda carrera.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-3 mt-4  wow animate__animated animate__fadeInUp">
+                    <div class="box-admision">
+                        <img src="assets/img/modalidad-comple.svg" class="mb-3 img-fluid" alt="">
+                        <h4>Complementación
+                            Académica</h4>
+                          <p>Para profesionales técnicos que
+                            deseen un título profesional universitario.</p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+      </section>
+      <section id="orgullo" class="l-container">
+          <div class="container">
+            <div class="row row-reverse">
+                <div class="col-md-6">
+                  <iframe width="560" class=" wow animate__animated animate__fadeInUp" height="315" src="https://www.youtube.com/embed/SjsWPcPVhug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+                </div>
+                <div class="col-md-6 colum-bet mb-md-0 mb-4">
+                    <div class="content-left  wow animate__animated animate__fadeInUp">
+                        <div>
+                            <h2 class="title-iframe">¡Llénate de orgullo, <br>
+                              llénalos de orgullo!</h2>
+                              <p>Las razones por las que dejaste de estudiar son las mismas que te impulsarán a crecer.
+                              </p>
+                        </div>
+                        <div class="modern">
+                          UCV, orgullosos <br>
+                          de verte crecer.
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+          </div>
+      
+      </section>
+      <section id="acreditaciones" class="l-container">
+        <div class="container">
+         <div class="row justify-content-center" id="counter">
+                    <div class="col-md-11">
+                    <div class="row justify-content-between row-responsive">
+                        <div class="col-md-3 col-8 mb-md-0 mb-4">
+                        
+                                <span class="count percent" data-count="14">0</span>
+                            
+                                <p>Nuevas acreditaciones a nuestros programas académicos.</p>
+                                <h5 class="fuente">Sineace </h5>
+                        </div>
+                        <div class="col-md-3 col-8 mb-md-0 mb-4">
+                            <div>
+                            <img src="assets/img/icon-flecha-arriba.svg" class="img-fluid flecha-arriba" alt="">
+                            <span class="count percent" data-count="4">0</span>
+                            </div>
+                       
+                                <p>Subimos cuatro posiciones en el ranking de las mejores universidades del Perú 2020.</p>
+                                <h5 class="fuente">Revista América Economía </h5>
+
+                        </div>
+                        <div class="col-md-3 col-8 mb-md-0 mb-4">
+                        <span class="count percent" data-count="70">0</span>
+                                <p>Docentes investigadores registrados.</p>
+                                <h5 class="fuente">Renacyt </h5>
+                        </div>
+                        <div class="col-md-3 col-8 mb-md-0 mb-4 ">
+                        <span class="count percent" data-count="5">0</span>
+                                <span class="count">.°</span>
+                                
+                                <p>Lugar en Sostenibilidad Ambiental en Universidades Peruanas</p>
+                                <h5 class="fuente">Red Ambiental Interuniversitaria </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+      
+        <footer class="bg-blue-ucv">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-8 pt-1">
+                        <p class="text-center ">© <span id="año"></span> UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS
+                            RESERVADOS.<br>
+                            <a href="https://trilce.ucv.edu.pe/politicas/PoliticaPrivacidad.html"
+                                target="_blank">POLÍTICAS
+                                DE PRIVACIDAD</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script>
+            var counted = 0;
+            $(window).scroll(function () {
+
+                var oTop = $('#counter').offset().top - window.innerHeight;
+                if (counted == 0 && $(window).scrollTop() > oTop) {
+                    $('.count').each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+                        $({
+                            countNum: $this.text()
+                        }).animate({
+                            countNum: countTo
+                        },
+
+                            {
+
+                                duration: 2000,
+                                easing: 'swing',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum);
+                                    //alert('finished');
+                                }
+
+                            });
+                    });
+                    counted = 1;
+                }
+
+            });
+        </script>
+        <script>
+
+
+            $('#idCurrentYear').append(year);
+            var banner = document.getElementById('banner');
+            window.addEventListener('resize', reportWindowSize);
+            document.addEventListener("DOMContentLoaded", reportWindowSize);
+
+
+            function reportWindowSize() {
+                let alto = window.innerHeight;
+
+                if (alto < 725) {
+                    banner.classList.add("banner-mobile")
+                } else {
+                    banner.classList.remove("banner-mobile")
+                }
+            }
+
+            //Insertar Año
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById('año').textContent = year;
+
+
+        </script>
+
+</body>
+
+</html>

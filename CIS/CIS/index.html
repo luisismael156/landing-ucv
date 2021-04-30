@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Centro de informática y sistemas</title>
+</head>
+<style>
+    /* fuentes */
+    @font-face {
+        font-family: 'Decima Bold';
+        src: url(fonts/decima-bold.otf);
+    }
+
+    @font-face {
+        font-family: 'Decima Regular';
+        src: url(fonts/decima-regular.otf);
+    }
+
+    @font-face {
+        font-family: 'Decima Heavy';
+        src: url(fonts/decima-heavy.otf);
+    }
+
+    @font-face {
+        font-family: 'Decima Light';
+        src: url(fonts/decima-light.otf);
+    }
+
+    body {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Decima Regular';
+    }
+
+    .nav-ucv {
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        top: 20px;
+    }
+
+    .navbar-light .navbar-toggler {
+
+        border-color: white;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+
+        filter: brightness(0) invert(1);
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    header .container {
+        position: relative;
+    }
+
+    .nav-link {
+        color: white !important;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+    .nav-link.nav:hover {
+        border-bottom: 1px solid white;
+    }
+
+    #navbarNavDropdown {
+        justify-content: center;
+    }
+
+    .carousel-item {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-caption {
+        right: initial;
+        bottom: initial;
+        left: initial;
+    }
+
+    .carousel-caption span {
+        font-family: 'Decima Light';
+    }
+
+    .title-banner {
+        font-size: 70px;
+        line-height: 75px;
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .nav-item.active-cta {
+        background: #04BEFB;
+        border-radius: 100px;
+        font-family: 'Decima Heavy';
+        transition: all ease .3s;
+        border: 1px solid transparent;
+        margin-left: 30px;
+    }
+
+    .nav-item.active-cta:hover {
+        background: white;
+        border-radius: 100px;
+        font-family: 'Decima Heavy';
+        border: 1px solid #04BEFB;
+        transition: all ease .3s;
+    }
+
+    .nav-item.active-cta:hover a {
+        color: #04BEFB !important;
+        transition: all ease .3s;
+    }
+
+    .text-primary {
+        color: #04BEFB;
+    }
+
+    .bg-primary {
+        background-color: #04BEFB !important;
+    }
+
+    .l-container {
+        padding: 80px 0;
+    }
+
+    .title-section {
+        margin-bottom: 30px;
+    }
+
+    .margin-row {
+        margin-top: 70px;
+    }
+
+    .item-programa {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .view {
+        width: 100%;
+    }
+
+    #programa-computacion ul,
+    #cursos-programa ul,
+    #certificaciones ul {
+        list-style: none;
+
+    }
+
+    #programa-computacion ul,
+    #cursos-programa ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    #programa-computacion ul li::before,
+    #certificaciones ul li::before {
+        content: "\2022";
+        color: #04BEFB;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        font-size: 21px;
+    }
+
+
+    #programa-computacion li,
+    #cursos-programa li {
+        margin-top: 10px;
+    }
+
+    #cursos-programa li {
+        display: flex;
+        align-items: center;
+    }
+
+    #cursos-programa ul li::before {
+        content: "\2022";
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px;
+        border-radius: 50%;
+        margin-right: 9px;
+    }
+
+    footer {
+        background: #081738;
+        padding: 35px 0;
+    }
+
+    .mapa-footer a {
+        color: white;
+
+    }
+
+    .mapa-footer ul {
+        list-style: none;
+    }
+
+    .mapa-footer ul li {
+        font-size: 14px;
+    }
+
+    .demopadding {
+        float: right;
+        margin-top: 30px;
+    }
+
+    .icon {
+        position: relative;
+        text-align: center;
+        width: 0px;
+        height: 0px;
+        padding: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius: 20px 20px 20px 20px;
+        -khtml-border-radius: 20px 20px 20px 20px;
+        color: #FFFFFF;
+    }
+
+    .icon i {
+        font-size: 20px;
+        position: absolute;
+        left: 9px;
+        top: 10px;
+    }
+
+    .icon.social {
+        float: left;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+        background: white;
+        color: #081738;
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .icon.social:hover {
+        background: #081738;
+        color: white;
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+        -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+        -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+        -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+        filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+    }
+
+    .icon.social.fb i {
+        left: 13px;
+        top: 10px;
+    }
+
+    .icon.social.tw i {
+        left: 11px;
+    }
+
+    .icon.social.in i {
+        left: 11px;
+    }
+
+    .copyright {
+        float: right;
+    }
+
+    .content-program h3 {
+        font-family: 'Decima Heavy';
+    }
+
+    .copyright span {
+        text-align: right;
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .text-reseña {
+        padding: 9px 15px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 12px;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+
+    /* Button Whatsapp */
+    .mypage-alo-ph-circle,
+    .mypage-alo-ph-circle-fill {
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        z-index: 999;
+    }
+
+    .mypage-alo-phone {
+        bottom: 180px
+    }
+
+    .animated.infinite {
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite
+    }
+
+    .mypage-alo-ph-circle {
+        width: 90px;
+        height: 90px;
+        top: 12px;
+        left: 12px;
+        position: absolute;
+        background-color: transparent;
+        border-radius: 100%;
+        border: 2px solid rgba(30, 30, 30, .4);
+        opacity: .1;
+        opacity: .5
+    }
+
+    .zoomIn {
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn
+    }
+
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both
+    }
+
+    .mypage-alo-ph-circle-fill {
+        width: 60px;
+        height: 60px;
+        top: 28px;
+        left: 28px;
+        position: absolute;
+        -ms-transition: all .2s ease-in-out;
+        border-radius: 100%;
+        border: 2px solid transparent;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        opacity: .4 !important
+    }
+
+    .mypage-alo-ph-circle,
+    .mypage-alo-phone:hover .mypage-alo-ph-circle {
+        border-color: #43b91e
+    }
+
+    .mypage-alo-ph-img-circle {
+        z-index: 999;
+        width: 30px;
+        height: 30px;
+        top: 43px;
+        left: 44px;
+        position: absolute;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        opacity: 1;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        background-size: 100%
+    }
+
+    .cquery,
+    .cquery .bg {
+        width: 100%;
+        top: 0;
+        left: 0
+    }
+
+    .mypage-alo-ph-circle-fill,
+    .mypage-alo-ph-img-circle,
+    .mypage-alo-phone:hover .mypage-alo-ph-circle-fill,
+    .mypage-alo-phone:hover .mypage-alo-ph-img-circle {
+        background-color: #43b91e
+    }
+
+    .tada {
+        -webkit-animation-name: tada;
+        animation-name: tada
+    }
+
+    @-webkit-keyframes tada {
+
+        from,
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1)
+        }
+
+        10%,
+        20% {
+            -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+        }
+
+        30%,
+        50%,
+        70%,
+        90% {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+        }
+
+        40%,
+        60%,
+        80% {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+        }
+    }
+
+    @keyframes tada {
+
+        from,
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1)
+        }
+
+        10%,
+        20% {
+            -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+        }
+
+        30%,
+        50%,
+        70%,
+        90% {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+        }
+
+        40%,
+        60%,
+        80% {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+        }
+    }
+
+    @keyframes pulse {
+
+        from,
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1)
+        }
+
+        50% {
+            -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05)
+        }
+    }
+
+    @-webkit-keyframes zoomIn {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3)
+        }
+
+        50% {
+            opacity: 1
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3)
+        }
+
+        50% {
+            opacity: 1
+        }
+    }
+
+    @keyframes pulse {
+        from {
+            transform: scale(1.1);
+        }
+
+        50% {
+            transform: scale(0.95);
+        }
+
+        to {
+            transform: scale(1.1);
+        }
+    }
+
+
+    .fe-pulse-w-pause {
+        animation-name: pulse;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+
+    .fe-pulse-w-pause:hover,
+    .fe-pulse-w-pause:focus {
+        animation-name: unset;
+    }
+
+    .mypage-alo-phone {
+        position: fixed;
+        bottom: 110px;
+        left: 0
+    }
+
+    .btn-whatsapp {
+        z-index: 999;
+        position: fixed;
+        right: 130px;
+        bottom: 130px;
+    }
+
+    #modal-whatsapp-desk .modal-header,
+    #modal-whatsapp-mobile .modal-header {
+        background-color: #25D366;
+        border-radius: 22px 22px 0px 0px;
+    }
+
+    #modal-whatsapp-desk .modal-content,
+    #modal-whatsapp-mobile .modal-content {
+        border-radius: 22px 22px 22px 22px;
+    }
+
+    .link-whatsapp {
+        background: #E5E5E5;
+        padding: 5px;
+        text-align: center;
+        border-radius: 7px;
+        margin: 5px 0;
+        display: block;
+        color: black;
+
+    }
+
+    .link-whatsapp:hover {
+        background: #aca9a9;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .title-modal {
+        text-align: center;
+        font-family: 'Decima Heavy';
+        color: #25D366;
+    }
+
+    .btn-whatsapp.mobile {
+        display: none;
+    }
+
+    /* Media querys */
+
+    @media (min-width: 1670px) {
+        .view {
+            height: 1000px;
+        }
+
+
+    }
+
+    @media (max-width: 1120px) {
+        .title-banner {
+            font-size: 50px;
+            line-height: 55px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .no-bp-row {
+            margin-bottom: 0;
+        }
+
+        .nav-item.active-cta {
+
+            margin-left: 0px;
+            animation: none;
+        }
+
+        .logo-cv {
+            display: none;
+        }
+
+        .nav-ucv .navbar-nav {
+            background: #3d3c3c;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .title-banner {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        .img-program {
+            text-align: center;
+        }
+
+        .content-program h3 {
+            text-align: center;
+        }
+
+        .img-footer {
+            text-align: center;
+        }
+
+        .mapa-footer ul {
+            text-align: center;
+            margin-top: 30px;
+            padding-left: 0;
+        }
+
+        .demopadding {
+            float: nonE;
+            height: 50px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .copyright span {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .btn-whatsapp.mobile {
+            display: block;
+        }
+
+        .btn-whatsapp.desk {
+            display: none;
+        }
+
+        .title-banner {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .title-banner {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        .l-container {
+            padding: 60px 0;
+        }
+
+        header .container {
+            padding-right: 0;
+            padding-left: 0;
+
+        }
+
+        .text-primary {
+            font-size: 30px;
+
+        }
+    }
+
+
+    #modal-form .form-group .form-control,
+    #modal-gracias .form-group .form-control {
+        padding-left: 2.375rem;
+        border-radius: 7px;
+    }
+
+    #modal-form .form-group textarea.form-control,
+    #modal-gracias .form-group textarea.form-control {
+        padding: .375rem .75rem;
+        background-color: #F0F0F0;
+    }
+
+    .form-group .form-control-icon {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }
+
+    .btn.nav-item.active-cta {
+        background: #081738;
+        border-radius: 100px;
+        font-family: 'Decima Heavy';
+        transition: all ease .3s;
+        border: 1px solid transparent;
+        margin-left: 30px;
+        padding: 8px 35px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    #modal-form .modal-content,
+    #modal-gracias .modal-content {
+        background-color: #04BEFB;
+        border-radius: 22px;
+    }
+
+    #modal-form .modal-header,
+    #modal-gracias .modal-header {
+        border-bottom: 1px solid #04BEFB;
+    }
+
+    .title-form-modal {
+        font-family: 'Decima Heavy';
+        color: white;
+    }
+
+    #modal-form .close,
+    #modal-gracias .close {
+        opacity: 1;
+        color: white;
+    }
+
+    .politica-check {
+        font-family: 'Decima Bold';
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div class="modal fade" id="modal-whatsapp-desk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3 class="title-modal">Elige tu campus</h3>
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51968758429&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>
+                                        Ate</spam>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51951430985&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Olivos</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp">
+                                    <span href="https://web.whatsapp.com/send?phone=51951430985&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">Callao</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51956568345&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Moyobamba</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51947864766&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Chepén</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51982490733&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Piura</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51961970953&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Chiclayo</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51958853351&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>San
+                                        Juan de Lurigancho</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51959074276&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Chimbote</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51952844571&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Tarapoto</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51955673596&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Huaraz</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://web.whatsapp.com/send?phone=51989986681&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Trujillo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-whatsapp-mobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3 class="title-modal">Elige tu campus</h3>
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51968758429&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>
+                                        Ate</spam>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51951430985&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Olivos</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp">
+                                    <span href="https://api.whatsapp.com/send?phone=51951430985&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">Callao</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51956568345&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Moyobamba</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51947864766&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Chepén</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51982490733&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Piura</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51961970953&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Chiclayo</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51958853351&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>San
+                                        Juan de Lurigancho</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51959074276&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Chimbote</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51952844571&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Tarapoto</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51955673596&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Huaraz</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="link-whatsapp" href="https://api.whatsapp.com/send?phone=51989986681&amp;text=Hola,%20necesito%20más%20información%20del%20PROGRAMA%20DE%20ACREDITACIÓN%20EN%20COMPUTACIÓN%20">
+                                    <span>Trujillo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal gracias fade" id="modal-gracias" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row" id="box-gracias">
+                            <div class="col-md-12">
+                                <div class="box" style="padding: 100px 0;">
+                                    <h4 class="text-center title-form-modal">GRACIAS <br> POR ENVIARNOS TUS DATOS</h4>
+                                    <span class="text-center d-block text-white">En breve nos estaremos comunicando contigo</span>
+                                    <button type="button" class="btn nav-item active-cta" data-dismiss="modal" aria-label="Close" style="margin-top: 2.5rem;">
+                                        <span aria-hidden="true">OK</span>
+                                    </button>
+                                </div>
+
+                                <div class="horario">
+                                    <h5 class="text-center title-form-modal">HORARIO DE ATENCIÓN:</h5>
+                                    <span class="text-center d-block text-white mb-4">Lunes a Viernes 8:00 - 13:00 y 14:00 - 18:00 <br> Sábado 8:00 - 13:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <?php include 'form.php' ?>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="btn-whatsapp desk">
+        <a href="" data-toggle="modal" data-target="#modal-whatsapp-desk">
+            <div class="animated infinite zoomIn mypage-alo-ph-circle">
+            </div>
+            <div class="animated infinite pulse mypage-alo-ph-circle-fill">
+            </div>
+            <div class="animated infinite tada mypage-alo-ph-img-circle">
+                <img class="icon-whatsapp" src="https://image.flaticon.com/icons/svg/134/134937.svg">
+            </div>
+        </a>
+
+    </div>
+
+    <div class="btn-whatsapp mobile">
+        <a href="" data-toggle="modal" data-target="#modal-whatsapp-mobile">
+            <div class="animated infinite zoomIn mypage-alo-ph-circle">
+            </div>
+            <div class="animated infinite pulse mypage-alo-ph-circle-fill">
+            </div>
+            <div class="animated infinite tada mypage-alo-ph-img-circle">
+                <img class="icon-whatsapp" src="https://image.flaticon.com/icons/svg/134/134937.svg">
+            </div>
+        </a>
+
+    </div>
+    <header>
+        <div class="container">
+            <nav class="navbar nav-header navbar-expand-lg nav-ucv navbar-light">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="logo-CIS.svg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link nav scrollTo" href="#programa-computacion">PROGRAMA DE COMPUTACIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav scrollTo" href="#cursos-programa">CURSOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav scrollTo" href="#certificaciones">CERTFICACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav" href="contacto.php">CONTACTOS</a>
+                        </li>
+                        <li class="nav-item active-cta fe-pulse-w-pause ">
+
+                            <a class="nav-link" data-toggle="modal" data-target="#modal-form" href="#">ESCRÍBENOS</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="logo-cv">
+                    <img src="icon-ucv.svg" alt="" class="img-fluid">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="banner1-responsive.jpg">
+                        <img class="d-block w-100" src="banner.jpg" alt="Banner"> </picture>
+
+                </div>
+                <div class="carousel-caption">
+                    <span class="h3-responsive title-banner">Potencia tu perfil y obtén<br class="reponsive-salt"> una
+                        acreditación
+                        internacional</span>
+                    <img class="img-fluid mt-5 d-block" src="socios.png" alt="">
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="view">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="banner2-responsive.jpg">
+                        <img class="d-block w-100" src="banner2.jpg" alt="First slide">
+                        <div class="mask rgba-black-light"></div>
+                    </picture>
+
+                </div>
+                <div class="carousel-caption">
+                    <span class="h3-responsive title-banner mb-4">Vallejiano,<br>¡Fortalece tus habilidades en
+                        TICs!</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </div>
+
+    <main>
+        <section id="programa-computacion" class="l-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="title-section text-center">
+                            <h1 class="text-primary">PROGRAMA DE <br>ACREDITACIÓN EN COMPUTACIÓN</h1>
+
+                        </div>
+                        <div class="desc-program text-center ">
+                            El PAC se desarrolla en la MODALIDAD VIRTUAL, permite al estudiante desarrollar los cursos
+                            de computación desde el lugar en donde se encuentre, de una forma ﬂexible y dinámica a
+                            través de internet. Nuestro modelo de enseñanza aprendizaje es un sistema E-Learning, el
+                            cual incluye autoformación mediada por tecnología y sesiones de clases online guiado por un
+                            tutor virtual.
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-row">
+                    <div class="col-lg-4">
+                        <div class="item-programa">
+                            <div class="img-program ">
+                                <img src="icon-ventajas.png" alt="">
+                            </div>
+                            <div class="content-program">
+                                <h3 class="mt-4 text-primary">REQUISITOS</h3>
+                                <ul>
+                                    <li>Computador personal Core 2 Duo o superior, mínimo 8 Gb de RAM. </li>
+                                    <li>Acceso a internet, mínimo 8 Mbps. </li>
+                                    <li>Auriculares o micrófono, parlantes (uso obligatorio) y cámara web.</li>
+                                    <li>Software de acuerdo al nivel de computación.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item-programa">
+                            <div class="img-program ">
+                                <img src="icon-requisitos.png" alt="">
+                            </div>
+                            <div class="content-program">
+                                <h3 class="mt-4 text-primary">VENTAJAS</h3>
+                                <ul>
+                                    <li>Computador personal Core 2 Duo o superior, mínimo 8 Gb de RAM. </li>
+                                    <li>Acceso a internet, mínimo 8 Mbps. </li>
+                                    <li>Auriculares o micrófono, parlantes (uso obligatorio) y cámara web.</li>
+                                    <li>Software de acuerdo al nivel de computación.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item-programa">
+                            <div class="img-program ">
+                                <img src="icon-certificacion.png" alt="">
+                            </div>
+                            <div class="content-program">
+                                <h3 class="mt-4 text-primary">CERTIFICACIONES</h3>
+                                <ul>
+                                    <li>Computador personal Core 2 Duo o superior, mínimo 8 Gb de RAM. </li>
+                                    <li>Acceso a internet, mínimo 8 Mbps. </li>
+                                    <li>Auriculares o micrófono, parlantes (uso obligatorio) y cámara web.</li>
+                                    <li>Software de acuerdo al nivel de computación.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cursos-programa" class="l-container bg-primary">
+            <div class="container">
+                <h1 class="text-center text-white">CURSOS</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 ">
+                        <div class="img-cursos text-center mt-4">
+                            <img src="img-cursos.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-8 col-9">
+                        <div class="herramientas margin-row">
+                            <ul class="text-white">
+                                <li>Ms Word 2016</li>
+                                <li>Ms Excel 2016</li>
+                                <li>SPSS 26</li>
+                                <li>Herramientas digitales para el Emprendimiento</li>
+                                <li>Ms Excel 2016 y Power BI</li>
+                                <li>AutoCAD 2018</li>
+                                <li>ArchiCAD 21</li>
+                                <li>Bizagi Studio 11 & Ms Project 2016</li>
+                                <li>S10 v2005 & Ms Project 2016</li>
+                                <li>Autodesk Inventor 2018</li>
+                                <li>AutoCAD Civil 3D 2019</li>
+
+                                <li>Cisco Certified Network Associate - CCNA 7.0</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="text-center mt-5">
+                            <h4 class="text-center text-reseña">*La enseñanza de los cursos dependerá del nivel de
+                                computación.</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="certificaciones" class="l-container">
+            <div class="container">
+                <h1 class="text-center title-section text-primary">CERTIFICACIONES</h1>
+                <div class="row justify-content-center margin-row">
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="item-herramienta">
+                            <div class="img-herramienta mb-4 pl-4">
+                                <img src="pearson-icon.png" alt="">
+                            </div>
+                            <div class="content-herramienta">
+                                <ul>
+                                    <li>Adobe</li>
+                                    <li>Apple</li>
+                                    <li>Autodesk</li>
+                                    <li>Consejo para la Acreditación en la Conservación Auditiva</li>
+                                    <li>Ocupacional (CAOHC) Cisco System</li>
+                                    <li>Check Point Software Technologies</li>
+                                    <li>CompTIA Testing</li>
+                                    <li>IBM</li>
+                                    <li>Instituto de Marketing Digital (DMI)</li>
+                                    <li>Linux</li>
+                                    <li>Microsoft</li>
+                                    <li>Oracle Certification Program</li>
+                                    <li>PMI - Project Management Institute</li>
+                                    <li>SAP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center margin-row">
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="item-herramienta">
+                            <div class="img-herramienta mb-4 pl-4">
+                                <img src="microsoft-icon.png" alt="">
+                            </div>
+                            <div class="content-herramienta">
+                                <ul>
+                                    <li>Microsoft Specialist Office Word 2016 – 725 / 2019 - 100</li>
+                                    <li>Microsoft Specialist Office PowerPoint 2016 – 727 / 2019 - 300</li>
+                                    <li>Microsoft Specialist Office Excel 2016 – 729 / 2019 - 200</li>
+                                    <li>Consejo para la Acreditación en la Conservación Auditiva</li>
+                                    <li>Microsoft Specialist Office Expert Word / 2019 – 101</li>
+                                    <li>Microsoft Specialist Office Expert Excel / 2019 - 201</li>
+                                    <li>Microsoft Outlook / 2019 - 400</li>
+                                    <li>MTA: Windows OS Fundamentals 98-349</li>
+                                    <li>MTA: Software Development Fundamentals 98-361</li>
+                                    <li>MTA: Database Fundamentals 98-364</li>
+                                    <li>MTA: Windows Server Admin Fundamentals 98-365</li>
+                                    <li>MTA: Networking Fundamentals 98-366</li>
+                                    <li>MTA: Security Fundamentals 98-367</li>
+                                    <li>MTA: Mobility and Devise Fundamentals 98-368</li>
+                                    <li>MTA: Cloud Fundamentals 98-369</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center margin-row">
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="item-herramienta">
+                            <div class="img-herramienta mb-4 pl-4">
+                                <img src="cisco-icon.png" alt="">
+                            </div>
+                            <div class="content-herramienta">
+                                <ul>
+                                    <p><b>CCNA</b>: Cisco Certified Network Associate</p>
+                                    <span><b>CyberOps Associate:</b></span>
+                                    <li>Understanding Cisco Cybersecurity Operations Fundamentals</li>
+                                    <li>Understanding Cisco Cybersecurity Fundamentals</li>
+                                    <li>Implementing Cisco Cybersecurity Operations</li>
+
+                                    <span class="mt-4 d-block"><b>CCNP Enterprise:</b></span>
+                                    <li>Implementing and Operating Cisco Enterprise Network Core Technologies</li>
+                                    <li>Implementing Cisco Enterprise Advanced Routing and Services</li>
+                                    <li>Implementing Cisco SD – WAN Solutions</li>
+                                    <li>Designing Cisco Enterprise Networks</li>
+
+                                    <li>Designing Cisco Enterprise Wireless Networks</li>
+                                    <li>Implementing Cisco Enterprise Wireless Networks</li>
+
+                                    <li>Automating Cisco Enterprise Solutions</li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="img-footer">
+                        <img src="logo-footer.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="mapa-footer">
+                        <ul class="text-white">
+                            <li><b>Ir a</b></li>
+                            <li><a href="#programa-computacion" class="scrollTo">PROGRAMA DE COMPUTACION</a></li>
+                            <li><a href="#cursos-programa" class="scrollTo">CURSOS</a></li>
+                            <li><a href="#certificaciones" class="scrollTo">CERTFICACIONES</a></li>
+                            <li><a href="contacto.html" class="">CONTACTOS</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class='demopadding'>
+                        <div class='icon social fb'><i class='fa fa-facebook'></i></div>
+                        <div class='icon social tw'><i class='fa fa-twitter'></i></div>
+                        <div class='icon social in'><i class='fa fa-instagram'></i></div>
+                        <div class='icon social in'><i class='fa fa-youtube'></i></div>
+
+                    </div>
+                    <div class="copyright">
+                        <span class="text-white">© 2020 UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS RESERVADOS
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $(".scrollTo").on('click', function(e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: ($(target).offset().top)
+            }, 1000);
+        });
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,857 @@
+@font-face {
+    font-family: "Prelo Book";
+    src: url(../fonts/Prelo-Book.otf);
+}
+
+@font-face {
+    font-family: "Prelo Exbd";
+    src: url(../fonts/Prelo-Exbd.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Bold";
+    src: url(../fonts/PreloSlab-Bold.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Book";
+    src: url(../fonts/PreloSlab-Book.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Medium";
+    src: url(../fonts/PreloSlab-Medium.otf);
+}
+
+@font-face {
+    font-family: 'MessinaSans Book';
+    src: url(../fonts/MessinaSans-Book.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Regular';
+    src: url('../fonts/MessinaSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Semibold';
+    src: url('../fonts/MessinaSans-SemiBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Light';
+    src: url('../fonts/MessinaSerif-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaModern';
+    src: url('../fonts/MessinaModern-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaModern Light';
+    src: url('../fonts/MessinaModern-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaSerif';
+    src: url('../fonts/MessinaSerif-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MessinaSans Regular';
+    color: #233559;
+  
+}
+.mesinaserif{
+    font-family: 'MessinaSerif';
+    color: #E20511;
+}
+.font-roboto {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+
+}
+.l-container{
+
+    padding: 50px 0;
+}
+
+.title-ba {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'MessinaSans Book';
+    margin-bottom: 0;
+}
+
+.text-blue-ucv {
+    color: #233559;
+}
+
+small {
+    font-size: 10px;
+    font-weight: normal;
+}
+#banner {
+    background-image: url(assets/img/banner-civil.png);
+    background-size: cover;
+    background-position: center;
+    background-position-y: inherit;
+    height: calc(100vh - 110px);
+    position: relative;
+}
+#banner::before {
+    content: "";
+    background: linear-gradient(0deg, #0E151C -15.14%, rgba(255, 255, 255, 0) 50.43%);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.l-container {
+    padding: 60px 0;
+}
+
+.text-one {
+    font-family: "PreloSlab Medium";
+    font-size: 50px;
+    line-height: 50px;
+}
+
+#descripcion-carrera{
+    background: #F2F2F2;
+}
+
+.block-list ul li{
+    margin-bottom: 10px;
+}
+
+.content-box {
+    height: 110px;
+    width: 85%;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 1px solid #233559;
+    height: calc(1.6em + .75rem + 2px)!important;
+    color: #233559;
+    background-color: #FCFAF2;
+    font-family: 'MessinaSans Regular';
+    appearance: auto;
+}
+
+.form-control:focus {
+    border-radius: 0;
+    border: 1px solid #233559;
+    height: calc(2em + .75rem + 2px);
+    color: #233559;
+    background-color: #FCFAF2;
+}
+
+.title-banner {
+    font-family: "PreloSlab Bold";
+    color: #e10e17;
+    font-size: 70px;
+    line-height: 65px;
+}
+
+.border-bt {
+    border-bottom: 4px solid #e10e17;
+}
+
+.title-form {
+    font-weight: 700;
+    font-family: 'MessinaSans Semibold';
+    border-left: 5px solid #233559;
+    padding-left: 10px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.form-group {
+    margin-bottom: .5rem;
+}
+.h-container{
+    height: 100%;
+}
+.nav-pills .nav-link,.nav-pills .nav-link:focus,.nav-link.active  {
+    border-radius: 0;
+}
+.nav-elegir{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-elegir .nav-link {
+    width: 100%;
+    text-align: left;
+}
+.nav-elegir li.nav-item {
+
+    flex: 0 1 155px;
+}
+.nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #233559;
+}
+#form-banner {
+    background: #F2F2F2;
+    position: relative;
+    opacity:1;
+    padding: 30px;
+}
+
+.label-poli {
+    font-size: 12px;
+    vertical-align: text-top;
+}
+
+.btn-ucv {
+    background: #e10e17;
+    border-radius: 13.4609px;
+    border: #e10e17;
+}
+
+.btn-ucv:hover {
+    background: #e10e17;
+    border-radius: 13.4609px;
+    border: #e10e17;
+}
+
+.btn-ucv:active {
+    background: #e10e17 !important;
+    border-radius: 13.4609px;
+    border: #e10e17 !important;
+}
+
+.text-red-ucv {
+    color: #e10e17;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+
+.img-box {
+    width: 20%;
+}
+
+.title-section {
+    font-family: "PreloSlab Bold";
+}
+
+header {
+    border-bottom: 2px solid #233559;
+    background: #FFFFFF;
+    height: 110px;
+}
+
+
+
+.descripcion-carrera {
+     font-family: 'MessinaSans Light';
+
+}
+
+#form-banner .mb-4 {
+    margin-bottom: 1.2rem !important;
+}
+
+.campo {
+    background-color: #f2f2f2;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.title-ba-one {
+    font-family: 'MessinaSans Light';
+    font-size: 63px;
+    line-height: 63px;
+        padding-bottom: 5px!important;
+}
+
+
+
+.box-title-banner::before {
+    content: "Estudia";
+    background-color: #E30613;
+    color: white;
+    position: absolute;
+    top: 27%;
+    transform: rotate(270deg);
+    left: -87px;
+    font-size: 18px;
+    font-family: 'MessinaSans Semibold';
+    padding: 8px 20px;
+}
+.box-title-banner.one-line::before {
+    top: 45%;
+  
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: 'MessinaSans Book';
+    font-weight: 800;
+    color: #243559;
+}
+
+
+
+
+
+footer {
+    padding: 30px 0;
+    color: #fff;
+    background: #E30613;
+}
+footer a{
+  
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-blue-ucv {
+    color: #243559;
+}
+
+.desc-box {
+    font-weight: 400;
+}
+
+
+
+.btn-form {
+    font-family: 'MessinaSans Semibold';
+
+    border-color: #233559 !important;
+    background: transparent !important;
+        padding: 0.5rem 2.5rem;
+    color: #243559;
+    border-radius: 0;
+    border-width: 1px;
+}
+
+.btn-form:active,
+.btn-form:hover {
+    border-color: #233559 !important;
+    background: #233559 !important;
+    color: white;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.img-mobile-t {
+    display: none;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-box {
+    float: right;
+}
+
+#banner .container {
+    height: 100%;
+}
+
+.bg-banner {
+
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+a {
+    color: #243559;
+    text-decoration: underline;
+}
+
+.content-form {
+    padding: 30px;
+    padding-top: 0px;
+}
+
+
+
+.descripcion-carrera{
+    font-size: 24px;
+    line-height: 35px;
+}
+#convenios-internacionales{
+    padding-top: 30px;
+}
+
+
+
+
+.mallas-mobile{
+    position: absolute;
+    display: none;
+}
+.mallas{
+    position: absolute;
+}
+iframe {
+    max-width: 100%;
+}
+
+.modern{
+    font-family: 'MessinaModern Light';
+    font-size: 28px;
+}
+
+
+
+
+  /* Barra Banner */
+
+  .barra-left {
+    position: absolute;
+    height: 100%;
+    width: 17px;
+    background-color: #E30613;
+    left: 0px;
+    border-bottom: 17px solid #03C0F2;
+    z-index: 99;
+}
+
+.barra-bottom {
+    position: absolute;
+    width: 97%;
+    background-color: #233559;
+    height: 17px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.barra-right {
+    position: absolute;
+    height: 100%;
+
+    background-color: #E20511;
+    
+
+    border-bottom: 17px solid #02BFF2;
+    z-index: 99;
+}
+.humanidades .barra-right {
+    background: #DB4534;
+}
+.empresariales .barra-right {
+    background: #FF008C;
+}
+
+.salud .barra-right {
+    background: #44C62C;
+}
+.bg-banner>.barra-left,
+.bg-banner>.barra-bottom,
+.bg-banner>.barra-right {
+    display: none;
+}
+
+.barra-right.one {
+    right: 2.2%;
+    width: 1%;
+}
+
+.barra-right.two {
+    right: 1%;
+    width: 0.8%;
+}
+
+.barra-right.three {
+    right: 0;
+    width: 0.5%;
+}
+.b-bottom{
+    border-bottom: 1px solid #C4C4C4;
+    
+    padding-bottom: 55px;
+
+}
+
+#acreditaciones{
+    background: #233559;
+}
+#acreditaciones li{
+    list-style: none;
+
+}
+#acreditaciones p{
+    color: white;
+     font-family: 'MessinaSans Regular';
+
+}
+.fuente{
+    color: white;
+    font-family: 'MessinaModern';
+    font-size: 16px;
+}
+.flecha-arriba{
+    position: relative;
+    top: -43px;
+    left: 2px; 
+}
+.count{
+    font-size: 80px;
+    color: #E30613;
+    font-family: 'MessinaModern Light';
+}
+.barra-form{
+    display: none;
+        z-index: 9;
+}
+@media (min-width: 1200px) {
+     .container {
+        max-width: 1100px;
+    }
+    #banner .container {
+        max-width: 1000px;
+    }
+    .box-title-banner {
+    position: relative;
+ 
+}
+
+}
+
+
+@media (max-width: 1100px) {
+    .box-title-banner {
+        position: relative;
+        top: initial;
+    }
+    .box-title-banner {
+        margin-left: 60px;
+        left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-elegir {
+        display: flex;
+        justify-content: center;
+    }
+    #form-banner {
+
+        margin-bottom: 40px;
+    }
+
+    #banner {
+        height: auto!important;
+    }
+
+    .mallas {
+        display: none;
+    }
+
+    .title-ba-one {
+        padding-top: 0;
+        margin-top: 40px;
+    }
+
+    .title-ba {
+        margin-bottom: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    #descripcion-carrera {
+        background: #F2F2F2;
+        border-top: 2px solid #E20511;
+    }
+    .box-title-banner {
+        position: relative;
+        top: initial;
+    }
+  
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+  
+    .row-responsive{
+        justify-content: center!important;
+    }
+    .b-bottom{
+        border-bottom: 0px solid #C4C4C4;
+        
+    padding-bottom: 0px;
+
+    }
+    
+   
+    .title-ba-one {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+  
+
+    .img-desk {
+        display: none;
+    }
+
+    .img-mobile-t {
+        display: block;
+    }
+
+    .img-mobile {
+        display: block;
+
+
+    }
+
+    .logo-educa {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .nav-elegir li.nav-item {
+        flex: 0 1 140px;
+    }
+    .nav-elegir {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mallas-mobile{
+        display: block;
+        z-index: 99;
+    }
+    .barra-form{
+        display: block;
+        position: absolute;
+        bottom: 0;
+            z-index: 9;
+        
+    width: 100%;
+
+    }
+    .bg-banner .barra-right.one {
+
+        right: 3.5%;
+        width: 1.8%;
+
+    }
+
+    .bg-banner .barra-right.two {
+
+        right: 1.6%;
+        width: 1.1%;
+
+    }
+
+    .bg-banner .barra-right.three {
+
+        width: 1%;
+
+    }
+
+    .bg-banner>.barra-left,
+    .bg-banner>.barra-bottom,
+    .bg-banner>.barra-right {
+        width: 2%;
+    }
+
+    .bg-banner>.barra-left,
+    .bg-banner>.barra-bottom,
+    .bg-banner>.barra-right {
+        display: block;
+    }
+
+    .bg-banner .barra-right {
+
+        height: 100%;
+        top: 0px;
+    }
+
+    .bg-banner .barra-bottom {
+        width: 100%;
+        left: 0%;
+        background-color: #233559;
+    }
+
+    #banner>.barra-left,
+    #banner>.barra-bottom,
+    #banner>.barra-right {
+        display: none;
+    }
+
+
+
+
+    .bg-banner::before {
+        content: "";
+        background: linear-gradient(0deg, #0E151C -15.14%, rgba(255, 255, 255, 0) 80.43%);
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+    }
+    #banner::before {
+       display: none;
+    }
+   
+    
+   
+  
+   
+    .block-right{
+        margin-top: 30px;
+    }
+    .block-left ul, .block-right ul {
+        padding-left: 2rem;
+   
+    }
+    .descripcion-carrera {
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .title-ba {
+        max-width: 272px;
+    }
+
+  
+    #form-banner {
+
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+
+    #form-banner {
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+
+    #formu {
+
+        margin-top: 0px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .box-title-banner {
+        position: absolute;
+        bottom: 11%;
+        top: initial;
+    }
+
+   
+
+    .title-ba-one {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    
+    .img-desk-t {
+        display: none;
+    }
+
+
+
+
+
+
+    .btn-form {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .l-container {
+        padding: 30px 0;
+    }
+
+    .no-p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #formu {
+        padding-bottom: 0px;
+    }
+
+    #banner {
+        border-bottom: 0px solid #e10e17;
+
+    }
+
+    .title-section {
+        font-family: "PreloSlab Bold";
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-ba-one {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .nav-elegir li.nav-item {
+        flex: 0 1 100px;
+    }
+    .title-ba-one {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}

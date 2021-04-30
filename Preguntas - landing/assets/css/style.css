@@ -1,0 +1,751 @@
+@font-face {
+    font-family: "Prelo Book";
+    src: url(../fonts/Prelo-Book.otf);
+}
+
+@font-face {
+    font-family: "Prelo Exbd";
+    src: url(../fonts/Prelo-Exbd.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Bold";
+    src: url(../fonts/PreloSlab-Bold.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Book";
+    src: url(../fonts/PreloSlab-Book.otf);
+}
+
+@font-face {
+    font-family: "PreloSlab Medium";
+    src: url(../fonts/PreloSlab-Medium.otf);
+}
+
+@font-face {
+    font-family: 'MessinaSans Book';
+    src: url(../fonts/MessinaSans-Book.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Regular';
+    src: url('../fonts/MessinaSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Semibold';
+    src: url('../fonts/MessinaSans-SemiBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MessinaSans Light';
+    src: url('../fonts/MessinaSerif-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaModern';
+    src: url('../fonts/MessinaModern-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaModern Light';
+    src: url('../fonts/MessinaModern-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MessinaSerif';
+    src: url('../fonts/MessinaSerif-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MessinaSans Regular';
+    color: #233559;
+}
+
+.font-roboto {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+
+}
+.h-container{
+    height: 100%;
+}
+.l-container{
+
+    padding: 50px 0;
+}
+
+.title-ba {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'MessinaSans Book';
+    margin-bottom: 0;
+}
+
+.text-blue-ucv {
+    color: #233559;
+}
+
+small {
+    font-size: 10px;
+    font-weight: normal;
+}
+#banner {
+background-color: #F3F2EE;
+background-size: cover;
+height: calc(100vh - 110px);
+position: relative;
+    background-image: url(../img/banner-guia.jpg);
+   
+}
+
+#banner.banner-mobile{
+    height:800px;
+    background-image: url(../img/banner-guia.jpg);
+}
+.l-container {
+    padding: 60px 0;
+}
+
+.title-banner{
+    font-family: 'MessinaModern';
+    color: #E20511;
+    font-weight: 700;
+    font-size: 55px;
+}
+.subtitle-banner{
+   color: white;
+}
+
+
+#search-input{
+    position: relative;
+    z-index: 99;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  
+}
+.input-group .btn {
+    position: relative;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #FF020D;
+    border-color:#FF020D;
+}
+.btn-ucv {
+    background: #e10e17;
+    border-radius: 13.4609px;
+    border: #e10e17;
+}
+
+.btn-ucv:hover {
+    background: #e10e17;
+    border-radius: 13.4609px;
+    border: #e10e17;
+}
+
+.btn-ucv:active {
+    background: #e10e17 !important;
+    border-radius: 13.4609px;
+    border: #e10e17 !important;
+}
+
+.text-red-ucv {
+    color: #e10e17;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #233559 !important;
+    font-family: 'MessinaSans Regular';
+}
+
+
+.title-section {
+    font-family: "PreloSlab Bold";
+}
+
+header {
+    border-bottom: 2px solid #233559;
+    background: #FFFFFF;
+    height: 110px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: 'MessinaSans Book';
+    font-weight: 800;
+    color: #243559;
+}
+#mini-banner{
+    position: relative;
+}
+#mini-banner .texto-banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    width: 100%;
+    color: #fff;
+}
+
+
+.titulo-banner-mini{
+    font-family: 'MessinaModern';
+    font-weight: 700;
+    font-size: 55px;
+}
+.text-red-ucv
+{
+
+    color: #E20511;
+
+
+}
+
+footer {
+    padding: 0 0 30px 0;
+    color: #233559;
+}
+footer a{
+  
+    color: #233559;
+    text-decoration: none;
+}
+
+.text-blue-ucv {
+    color: #243559;
+}
+
+
+#formu {
+padding: 30px;
+
+
+}
+.btn-box {
+    float: right;
+}
+.btn-form {
+    font-family: 'MessinaSans Semibold';
+
+    border-color: #233559 !important;
+    background: transparent !important;
+        padding: 0.5rem 2.5rem;
+    color: #243559;
+    border-radius: 0;
+    border-width: 1px;
+}
+
+.btn-form:active,
+.btn-form:hover {
+    border-color: #233559 !important;
+    background: #233559 !important;
+    color: white;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.img-mobile-t {
+    display: none;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+#banner .container {
+    height: 100%;
+}
+
+
+
+
+
+a {
+    color: #243559;
+    text-decoration: underline;
+}
+
+
+.barra-left {
+    position: absolute;
+    height: 100%;
+    width: 17px;
+    background-color: #E30512;
+    left: 0px;
+    z-index: 1;
+}
+.barra-right {
+    position: absolute;
+    height: 100%;
+    width: 17px;
+    background-color: #E30512;
+    right: 0px;
+    z-index: 1;
+}
+.barra-bottom {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-color: #233559;
+   bottom: 0;
+    z-index: 9;
+    border-left: 17px solid #03C0F2;
+    border-right: 17px solid #03C0F2;
+
+}
+.text-section{
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-weight: 700;
+    color: #E20511;
+}
+main{
+    position: relative;
+}
+.desc-section{
+    /* margin-left: 50px; */
+    margin-top: 20px;
+}
+.box-consulta{
+
+    background-color: #E20511;
+    padding: 40px 25px;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+.icon-gps{
+    padding-right: 15px;
+}
+.box-text{
+    width: 50%;
+}
+/* Estilos Acordeon */
+.accordion-button::after {
+    width: initial;
+    height: initial;
+    font-size: 35px;
+    content: "+";
+    background-image: none;
+
+}
+.btn-con, .btn-con:hover,.btn-con:focus,.btn-con:active{
+    color: #fff;
+    background-color: #E30613;
+    border-color: #fff;
+    padding: 10px 30px;
+}
+.box-img{
+    flex: 0 0 10%;
+}
+.text-consulta{
+    flex: 0 0 50%;
+}
+.btn-consulta{
+    flex: 0 0 40%;
+}
+.cachito{
+    position: absolute;
+    bottom: 0;
+    bottom: -18px;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(
+180deg
+);
+content: "-";
+}
+
+ .accordion-button {
+    line-height: 25px;
+
+    padding: 10px 1.25rem;
+    
+    border: 1px solid #233559;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.accordion-button.collapsed {
+    border-bottom-width: 1px;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+.accordion-item{
+    margin-bottom: 10px;
+}
+zckground-color:none;
+}
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: initial;
+}
+.tramites footer{
+    background-color: #F3F3F3;
+}
+.tramites #guias{
+    background-color: #F3F3F3;
+}
+
+@media (min-width: 1200px) {
+     .container {
+        max-width: 1100px;
+    }
+    #banner .container {
+        max-width: 1000px;
+    }
+ 
+
+}
+
+
+@media (max-width: 1100px) {
+ 
+}
+
+@media (max-width: 991px) {
+    .titulo-banner-mini {
+        
+        font-size: 42px;
+    }
+    #banner.banner-mobile {
+        background-image: url(../img/banner-guia.jpg);
+        padding: 90px 0px;
+    }
+ 
+
+    #banner {
+        height: auto!important;
+    }
+
+    .mallas {
+        display: none;
+    }
+
+    .title-ba-one {
+        padding-top: 0;
+        margin-top: 40px;
+    }
+
+    .title-ba {
+        margin-bottom: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    #banner.banner-mobile {
+        background-image: url(../img/banner-guia.jpg);
+        padding: 90px 0px;
+    }
+    .input-group {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .title-banner {
+      
+        font-size: 48px;
+    }
+    #mini-banner img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    section#mini-banner {
+        height: 250px;
+    }
+ 
+    .logo-edu {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 22px;
+    }
+    .border-bottom {
+        border-bottom: 0px solid #dee2e6!important;
+    }
+    .flag-img{
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+    }
+    #expositores{
+        text-align: center;
+    }
+   
+.descripcion-corta{
+    text-align: center;
+}
+
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+ 
+    .row-responsive{
+        justify-content: center!important;
+    }
+    .b-bottom{
+        border-bottom: 0px solid #C4C4C4;
+        
+    padding-bottom: 0px;
+
+    }
+
+   
+    .title-ba-one {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+  
+
+    .img-desk {
+        display: none;
+    }
+
+    .img-mobile-t {
+        display: block;
+    }
+
+    .img-mobile {
+        display: block;
+
+
+    }
+
+    .logo-educa {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .titulo-banner-mini {
+        
+        font-size: 38px;
+    }
+    #banner.banner-mobile {
+        height: 800px;
+        background-image: url(../img/banner-guia.jpg);
+        padding: 100px 0px;
+    }
+    .barra-right,.barra-left{
+        display: none;
+    }
+    .subtitle-banner {
+        color: white;
+        font-size: 17px;
+    }
+    .title-banner {
+      
+        font-size: 38px;
+    }
+    .box-img {
+        flex: 0 0 15%;
+    }
+    .text-consulta {
+        flex: 0 0 85%;
+    }
+    .box-consulta{
+        flex-wrap: wrap;
+    }
+    .btn-consulta {
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+    .descripcion-carrera.mobile{
+        display: block;
+    }
+    .descripcion-carrera{
+
+        display: none;
+    }
+    .row-icons{
+        background-color: #233559;
+        padding: 30px 0;
+
+    }
+    .text-item {
+        color: white;
+        font-weight: 500;
+    }
+    .mallas-mobile{
+        display: block;
+        z-index: 99;
+    }
+    .barra-form{
+        display: block;
+        position: absolute;
+        bottom: 0;
+            z-index: 9;
+        
+    width: 100%;
+
+    }
+    .bg-banner .barra-right.one {
+
+        right: 3.5%;
+        width: 1.8%;
+
+    }
+
+   
+
+
+
+
+    .bg-banner::before {
+        content: "";
+        background: linear-gradient(0deg, #0E151C -15.14%, rgba(255, 255, 255, 0) 80.43%);
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+    }
+    #banner::before {
+       display: none;
+    }
+     .title-block {
+        font-size: 38px;
+    }
+   
+    
+   
+  
+    .title-block>span {
+        font-size: 15px;
+    }
+    .block-right{
+        margin-top: 30px;
+    }
+    .block-left ul, .block-right ul {
+        padding-left: 2rem;
+   
+    }
+    .descripcion-carrera {
+        font-size: 25px;
+        margin-top: 20px;
+        line-height: 29px;
+    }
+    .title-ba {
+        max-width: 272px;
+    }
+
+  
+
+    header {
+        height: auto;
+    }
+
+    .title-ba-one {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    
+    .img-desk-t {
+        display: none;
+    }
+
+
+
+
+
+
+    .btn-form {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .l-container {
+        padding: 30px 0;
+    }
+
+    .no-p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #formu {
+        padding-bottom: 0px;
+        padding-left: 0;
+    padding-right: 0;
+    }
+
+    #banner {
+        border-bottom: 0px solid #e10e17;
+
+    }
+
+    .title-section {
+        font-family: "PreloSlab Bold";
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-ba-one {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .title-ba-one {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}

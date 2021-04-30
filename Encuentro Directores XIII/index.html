@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SOMOS UCV | Admisión" />
+    <meta property="og:description"
+        content="Admisión. Estudia en la Universidad César Vallejo carreras universitarias que el mercado laboral requiere. ¡Preinscríbete Aquí!" />
+    <meta property="og:image" itemprop="image" content="https://www.somosucv.edu.pe/img/og.jpg" />
+    <meta property="og:image:alt" content="https://www.somosucv.edu.pe/img/og.jpg" />
+
+    <!-- imports head -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="assets/css/style.css?v=30" rel="stylesheet">
+
+ 
+
+    <title>Encuentro de directores</title>
+
+
+</head>
+
+<body>
+    <div class="home-area" id="home_page">
+        <header class="py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-6">
+
+                        <img src="assets/img/logo-ucv.svg" alt="" class="img-fluid img-desk">
+                        <img src="assets/img/icon-ucv.svg" alt="" class="img-fluid img-mobile">
+
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <div class="btn-box">
+                            <img src="assets/img/logo-licenciada.svg?v=2" alt="" class="img-fluid">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+        <section id="banner" class="l-container">
+            <div class="container">
+                <div class="row h-container">
+                    <div class="col-lg-7">
+                        <div class="container-banner">
+                            <img src="assets/img/logo-eduexp.svg" class="img-fluid logo-edu" alt="">
+                            <h1 class="text-center title-banner-form mobile mt-5">XIII Encuentro de Directores</h1>
+
+                            <img src="assets/img/banner-directores.png" class="img-fluid" alt="">
+                        </div>
+                   
+                    </div>
+                    <div class="col-lg-5">
+                        <div id="form-banner">
+                                <h1 class="text-center title-banner-form">XIII Encuentro de Directores</h1>
+
+
+                            <form id="formu" class="d-block" action="enviar.php" method="post">
+                                <h5 class="text-blue-ucv title-form">Déjanos tus datos e inscríbete</h5>
+                                <div class="form-group mt-4">
+                                    <input type="text" class="form-control campo" placeholder="DNI" name="dni"
+                                        required pattern="[0-9]+"
+                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                        maxlength="8" minlength="8">
+                                </div>
+                                <div class="form-group ">
+                                    <input type="text" class="form-control campo" placeholder="Nombres"
+                                        name="nombres" required>
+                                </div>
+                                <div class="form-group ">
+                                    <input type="text" class="form-control campo" placeholder="Apellidos"
+                                        name="apellidos" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control campo"
+                                        placeholder="Correo electrónico" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control campo"
+                                        placeholder="Número de celular" name="celular" required
+                                        pattern=".{0}|.{9,}"
+                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                        maxlength="9" minlength="9">
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="form-control campo" id="campus" name="sede" required>
+                                        <option value="" selected disabled hidden>Distrito de la I.E.</option>
+                                        <option value="Chiclayo">Chiclayo</option>
+                                        <option value="Los Olivos">Los Olivos</option>
+                                        <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                        <option value="Tarapoto">Tarapoto</option>
+                                        <option value="Trujillo">Trujillo</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control campo" id="campus" name="sede" required>
+                                        <option value="" selected disabled hidden>Institución Educativa</option>
+                                        <option value="Chiclayo">Chiclayo</option>
+                                        <option value="Los Olivos">Los Olivos</option>
+                                        <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                        <option value="Tarapoto">Tarapoto</option>
+                                        <option value="Trujillo">Trujillo</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control campo" id="campus" name="sede" required>
+                                        <option value="" selected disabled hidden>Campus</option>
+                                        <option value="Chiclayo">Chiclayo</option>
+                                        <option value="Los Olivos">Los Olivos</option>
+                                        <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                        <option value="Tarapoto">Tarapoto</option>
+                                        <option value="Trujillo">Trujillo</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="condicion" required>
+                                    <label class="form-check-label" for="condicion">He leído y acepto las <a
+                                            href="https://trilce.ucv.edu.pe/politicas/PoliticaPrivacidad.html"
+                                            target="_blank">políticas de
+                                            privacidad.</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-form mt-2">Enviar</button>
+
+
+                                <input type="hidden" name="landing" value="Encuentro Directores XIII" />
+                                <input type="hidden" name="source" value="<?php echo $source;?>" />
+                                <input type="hidden" name="carrera" value="FPA" />
+                                <input type="hidden" name="url" value="<?php echo $url;?>" />
+
+
+                            </form>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="descripcion-carrera" >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h2 class="descripcion-carrera">Innovación 
+                            para una nueva educación</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row justify-content-center row-icons">
+                            <div class="col-4 col-sm-3">
+                                <img src="assets/img/icon-calendario.svg" class="img-fluid d-block mx-auto mb-2" alt="">
+                                <h6 class="text-center text-item">Viernes 12 de marzo</h6>
+                                
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <img src="assets/img/icon-reloj.svg" class="img-fluid d-block mx-auto mb-2" alt="">
+                                <h6 class="text-center text-item">5:00 p. m.</h6>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <img src="assets/img/icon-zoom.svg" class="img-fluid d-block mx-auto mb-2" alt="">
+                                <h6 class="text-center text-item">Vía Zoom</h6>
+                            </div>
+                        </div>
+
+                      
+                       
+                    </div>
+
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <h2 class="descripcion-carrera mobile wow animate__animated animate__fadeInUp">Innovación 
+                            para una nueva educación</h2>
+                        <p class="descripcion-corta">La Universidad César Vallejo está organizando el décimo tercero encuentro de directores, Edu Experience, en el cual, se reunirán expertos en educación, quienes discutirán y analizarán la transformación, desafíos y enseñanzas que la pandemia Covid-19 está generando en la educación mundial.  </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expositores" class="l-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="mb-4">EXPOSITOR</h4>
+                        <div class="row border-bottom pb-2 pb-md-5">
+                            <div class="col-md-4">
+                                <img src="assets/img/rebeca-expositor.png" class="img-fluid d-block mx-auto" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <img src="assets/img/flag-argentina.svg" class="flag-img" alt="">
+                                <h4 class="nombre-expositor">REBECA ANIJOVICH</h4>
+                                <p>Codirectora del Postítulo de Actualización</p>
+                                <p>Académica en la Universidad de San Andrés. Asesora pedagógica en instituciones educativas de Chile, Colombia, Uruguay, Brasil y Argentina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="mb-4 mt-5">PANELISTAS</h4>
+                    <div class="col-md-6">
+                       
+                        <div class="row ">
+                            <div class="col-md-5">
+                                <img src="assets/img/beatriz-expo.png" class="img-fluid d-block mx-auto" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/img/flag-peru.svg" alt="" class="flag-img">
+                                <h4 class="nombre-expositor">BEATRIZ MERINO</h4>
+                                <p>Actual presidenta ejecutiva de la Universidad César Vallejo. Fue Presidenta  del Consejo de Ministros convirtiéndose en la primera mujer en desempeñar dicho cargo en el Perú y en América Latina. Fue la primera mujer en ser designada como Defensora del Pueblo en 2005. </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="assets/img/idel-expo.png" class="img-fluid d-block mx-auto" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <img src="assets/img/flag-peru.svg" class="flag-img" alt="">
+                                <h4 class="nombre-expositor">IDEL VEXLER</h4>
+                                <p>Exministro DE Educación, se desempeñó como Viceministro de Gestión Pedagógica, único peruano en vida con Palmas Magisteriales de Educador, Maestro y Amauta.</p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+       
+ 
+      <section id="acreditaciones" class="l-container">
+        <div class="container">
+         <div class="row justify-content-center" id="counter">
+                    <div class="col-md-11">
+                    <div class="row justify-content-between row-responsive">
+                        <div class="col-md-3 col-8 mb-md-0 mb-4">
+                        
+                                <span class="count percent" data-count="14">0</span>
+                            
+                                <p>Nuevas acreditaciones a nuestros programas académicos.</p>
+                                <h5 class="fuente">Sineace </h5>
+                        </div>
+                        <div class="col-md-3 col-8 mb-md-0 mb-4">
+                            <div>
+                            <img src="assets/img/icon-flecha-arriba.svg" class="img-fluid flecha-arriba" alt="">
+                            <span class="count percent" data-count="4">0</span>
+                            </div>
+                       
+                                <p>Subimos cuatro posiciones en el ranking de las mejores universidades del Perú 2020.</p>
+                                <h5 class="fuente">Revista América Economía </h5>
+
+                        </div>
+                        <div class="col-md-3 col-8 mb-md-0 mb-4">
+                        <span class="count percent" data-count="70">0</span>
+                                <p>Docentes investigadores registrados.</p>
+                                <h5 class="fuente">Renacyt </h5>
+                        </div>
+                        <div class="col-md-3 col-8 mb-md-0 mb-4 ">
+                        <span class="count percent" data-count="5">0</span>
+                                <span class="count">.°</span>
+                                
+                                <p>Lugar en Sostenibilidad Ambiental en Universidades Peruanas</p>
+                                <h5 class="fuente">Red Ambiental Interuniversitaria </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+      
+        <footer class="bg-blue-ucv">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-8 pt-1">
+                        <p class="text-center ">© <span id="año"></span> UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS
+                            RESERVADOS.<br>
+                            <a href="https://trilce.ucv.edu.pe/politicas/PoliticaPrivacidad.html"
+                                target="_blank">POLÍTICAS
+                                DE PRIVACIDAD</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script>
+            var counted = 0;
+            $(window).scroll(function () {
+
+                var oTop = $('#counter').offset().top - window.innerHeight;
+                if (counted == 0 && $(window).scrollTop() > oTop) {
+                    $('.count').each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+                        $({
+                            countNum: $this.text()
+                        }).animate({
+                            countNum: countTo
+                        },
+
+                            {
+
+                                duration: 2000,
+                                easing: 'swing',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum);
+                                    //alert('finished');
+                                }
+
+                            });
+                    });
+                    counted = 1;
+                }
+
+            });
+        </script>
+        <script>
+
+
+            $('#idCurrentYear').append(year);
+            var banner = document.getElementById('banner');
+            window.addEventListener('resize', reportWindowSize);
+            document.addEventListener("DOMContentLoaded", reportWindowSize);
+
+
+            function reportWindowSize() {
+                let alto = window.innerHeight;
+
+                if (alto < 725) {
+                    banner.classList.add("banner-mobile")
+                } else {
+                    banner.classList.remove("banner-mobile")
+                }
+            }
+
+            //Insertar Año
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById('año').textContent = year;
+
+
+        </script>
+
+</body>
+
+</html>

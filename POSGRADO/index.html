@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>POSGRADO</title>
+    <style>
+        @font-face {
+            font-family: 'ITC Franklin Gothic Std bkCp';
+            src: url(fonts/ITCFranklinGothicStd-BkCp.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin Gothic Std bkXCp';
+            src: url(fonts/ITCFranklinGothicStd-BkXCp.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin Gothic Std bkXC Book';
+            src: url(fonts/ITCFranklinGothicStd-Book.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin Gothic Std bkXC Demi';
+            src: url(fonts/ITCFranklinGothicStd-Demi.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin Gothic Std DmCd';
+            src: url(fonts/ITCFranklinGothicStd-DmCd.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin Gothic Std DmCp';
+            src: url(fonts/ITCFranklinGothicStd-DmCp.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin Gothic Std DmXCp';
+            src: url(fonts/ITCFranklinGothicStd-DmXCp.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin GothicStd Hvy';
+            src: url(fonts/ITCFranklinGothicStd-Hvy.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin GothicStd MdCd';
+            src: url(fonts/ITCFranklinGothicStd-MdCd.otf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin GothicStd Med';
+            src: url(fonts/ITCFranklinGothicStd-Med.otf);
+        }
+
+        body {
+            font-family: 'ITC Franklin GothicStd Med';
+        }
+
+        #banner-posgrado {
+            background: url(img/banner-posgrado.jpg);
+            background-size: cover;
+            position: relative;
+        }
+
+        .l-container {
+            padding: 50px 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            background: linear-gradient(180deg, rgba(210, 210, 210, 0.252) 0%, rgba(36, 36, 36, 0.35) 100%);
+            mix-blend-mode: multiply;
+            mix-blend-mode: normal;
+        }
+
+        .text-banner {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'ITC Franklin Gothic Std bkXC Demi';
+        }
+
+        .text-banner h1 {
+            font-size: 63px;
+            line-height: 59px;
+            margin-bottom: .3rem;
+            margin-top: -35px;
+        }
+
+        .text-banner h2 {
+            font-size: 33.6px;
+        }
+
+        .row-padding {
+            padding-top: 10px;
+            padding-bottom: 60px;
+        }
+
+        #form-envio {
+            background: #942939;
+            border-radius: 8px;
+            padding: 55px 40px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+        }
+
+        .title-carrera {
+            font-family: 'ITC Franklin Gothic Std bkXC Demi';
+            color: #365287;
+        }
+
+        .desc-carrera {
+            font-family: 'ITC Franklin Gothic Std bkXC Book';
+            font-size: 14px;
+        }
+
+        .btn-posgrado {
+            color: white;
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 10px 60px;
+            margin-top: 10px;
+            position: relative;
+            top: 20px;
+            margin: 0 auto;
+            display: block;
+            font-size: 20px;
+        }
+
+        .btn-posgrado:hover {
+            color: white;
+        }
+
+        .tabs-posgrado {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .tabs-posgrado .nav-item {
+            width: 33%;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            font-family: 'ITC Franklin Gothic Std bkXC Demi';
+        }
+
+        .tabs-posgrado .nav-link {
+            padding: 1.5rem 1rem;
+            font-size: 22px;
+            border-radius: 8px;
+            color: #939393;
+            box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.16);
+            letter-spacing: .5px;
+        }
+
+        .tabs-posgrado .btn-maestria.active {
+            background: #365287;
+            color: white;
+            box-shadow: none;
+        }
+
+        .tabs-posgrado .btn-doctorados.active {
+            background: #243040;
+            color: white;
+            box-shadow: none;
+        }
+
+        .tab-pane#carreras-doctorados h5 {
+            color: #243040;
+        }
+
+        .tab-pane#carreras-diplomados h5 {
+            color: #459586;
+        }
+
+        .tabs-posgrado .btn-diplomados.active {
+            background: #459586;
+            color: white;
+
+        }
+
+        .index {
+            z-index: 9;
+        }
+
+        .tab-content>.active {
+            display: flex;
+        }
+
+        .form-control,
+        .custom-select {
+            height: calc(1.4em + .75rem + 2px);
+            font-family: 'ITC Franklin Gothic Std bkXC Book';
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 0 auto;
+        }
+
+        .flip-card-inner {
+            border-radius: 8px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .flip-card-front {
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-card-back {
+            background-color: #932B3F;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .content-back h4 {
+            margin-bottom: 0px;
+            font-family: 'ITC Franklin Gothic Std bkXC Demi';
+        }
+
+        .content-back p {
+            font-size: 19px;
+            line-height: 22px;
+            font-family: 'ITC Franklin Gothic Std bkXC Book';
+        }
+
+        .content-front img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .content-front h4 {
+            font-family: 'ITC Franklin Gothic Std bkXC Demi';
+            color: #932B3F;
+            margin-top: 15px;
+        }
+
+        #ofrecemos {
+            background: #FAFAFA;
+        }
+
+        .title-section {
+            font-family: 'ITC Franklin Gothic Std bkXC Demi';
+            color: #932B3F;
+            margin-bottom: 3.5rem;
+        }
+.ft-r{
+    float: right;
+}
+        footer {
+            background: #000000;
+            padding: 50px 0;
+        }
+
+
+
+        ul.social-network {
+            list-style: none;
+            display: inline;
+            margin-left: 0 !important;
+            padding: 0;
+            float: right;
+        }
+
+        ul.social-network li {
+            display: inline;
+            margin: 0 3px;
+        }
+
+        .social-network a.icoYt:hover {
+            background-color: #e52d27;
+        }
+
+        .social-network a.icoFacebook:hover {
+            background-color: #3B5998;
+        }
+
+        .social-network a.icoTwitter:hover {
+            background-color: #00acee;
+        }
+
+        .social-network a.icoInstagram:hover {
+            background-color: #3f729b;
+        }
+
+
+        .social-circle li a {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            background-color: white;
+        }
+
+        .social-circle li i {
+            margin: 0;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .social-circle li a:hover i,
+        .triggeredHover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms--transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: all 3.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.8s;
+            color: white;
+        }
+
+        .social-circle i {
+            color: black;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1070px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .text-banner {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            #form-envio {
+
+                margin-top: 50px;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            footer span {
+                text-align: center;
+            }
+
+            .flip-card {
+
+                margin: 0 auto;
+            }
+
+            .text-banner h1 {
+                font-size: 58px;
+
+            }
+
+            .text-banner h2 {
+                font-size: 28.6px;
+            }
+
+            .tabs-posgrado {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tabs-posgrado .nav-item {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+  
+            .title-section {
+                font-size: 35px;
+                margin-bottom: 1rem;
+            }
+
+            ul.social-network {
+
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                float: none;
+            }
+
+            .desc-carrera,
+            .title-carrera {
+
+                text-align: center;
+            }
+
+            .text-banner {
+                margin-top: 0px;
+            }
+
+            .text-banner h1 {
+                font-size: 48px;
+                line-height: 54px;
+            }
+
+            .text-banner h2 {
+                font-size: 16.6px;
+            }
+
+
+        }
+
+        @media (max-width: 410px) {
+            .tabs-posgrado {
+
+                margin-bottom: 15px !important;
+            }
+
+            .tabs-posgrado .nav-link {
+                padding: 1rem .5rem;
+            }
+
+            .flip-card {
+                width: 250px;
+                height: 250px;
+            }
+
+            .text-banner h1 {
+                font-size: 38px;
+                line-height: 45px;
+            }
+
+            .text-banner h2 {
+                font-size: 15.6px;
+            }
+
+            #form-envio {
+                margin-top: 30px;
+                padding: 40px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="banner-posgrado">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-between py-5">
+                <div class="col-xs-4 col-6 index">
+                    <picture>
+                        <img src="img/LOGO_POSGRADO.png" class="img-fluid" alt="">
+                    </picture>
+                </div>
+                <div class="col-xs-4 col-3 index">
+                    <picture>
+                        <img src="img/Icono-UCV.png" class="img-fluid ft-r" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="row row-padding">
+                <div class="col-lg-6">
+                    <div class="text-banner text-white">
+                        <h1>MAYORES OPORTUNIDADES </h1>
+                        <h2>PARA EL FUTURO QUE QUIERES</h2>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 offset-md-1">
+                    <form id="form-envio">
+                        <div class="form-group">
+                            <select class="custom-select d-block w-100 form-control" id="country" required="">
+                                <option disabled="" selected="" value="">Programa</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombres" class="form-control" id="input-nombre"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Apellidos" class="form-control" id="input-nombre"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="DNI" class="form-control" id="input-nombre"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Correo Electronico" class="form-control" id="input-nombre"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Celular" class="form-control" id="input-nombre"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select d-block w-100 form-control" id="country" required="">
+                                <option disabled="" selected="" value="">Modalidad de ingreso</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-posgrado">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="maestrias-doctorados-diplomados" class="l-container">
+        <div class="container">
+            <div class="row">
+
+                <ul class="nav nav-pills mb-3 tabs-posgrado mb-5" id="pills-tab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link btn-maestria active" id="pills-home-tab" data-toggle="pill"
+                            href="#carreras-maestria" role="tab" aria-controls="pills-home"
+                            aria-selected="true">MAESTRÍAS</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link btn-doctorados " id="pills-profile-tab" data-toggle="pill"
+                            href="#carreras-doctorados" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">DOCTORADOS</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link btn-diplomados" id="pills-contact-tab" data-toggle="pill"
+                            href="#carreras-diplomados" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">DIPLOMADOS</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active row" id="carreras-maestria" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Administración<br> de la Educación
+
+                                </h5>
+                                <p class="desc-carrera">Para gestionar un sistema que garantice la calidad de las
+                                    instituciones educativas.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Administración<br> de Negocios-MBA
+
+                                </h5>
+                                <p class="desc-carrera">Para impulsar oportunidades de negocios con una visión
+                                    globalizada.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Agroexportación
+
+                                </h5>
+                                <p class="desc-carrera">Aplica la investigación como respuesta a la problemática
+                                    agroindustrial.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Arquitectura
+
+                                </h5>
+                                <p class="desc-carrera">Para diseñar edificaciones con visión integral y responsabilidad
+                                    ambiental.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Ciencia<br> de la Política
+
+                                </h5>
+                                <p class="desc-carrera">Lidera e integra equipos de trabajo de interpretación de la
+                                    realidad política.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Derecho<br> Corporativo
+
+                                </h5>
+                                <p class="desc-carrera">Para actuar con justicia y transparencia en las actividades
+                                    empresariales.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Derecho Penal y<br> Procesal Penal
+
+                                </h5>
+                                <p class="desc-carrera">Para resolver y asesorar casos de forma correcta y exitosa.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Didáctica en<br> Idiomas Extranjeros
+
+                                </h5>
+                                <p class="desc-carrera">Para optimizar los procesos de enseñanza-aprendizaje de
+                                    distintos idiomas.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Docencia<br> Universitaria
+
+                                </h5>
+                                <p class="desc-carrera">Para impulsar la competitividad educativa con investigación
+                                    especializada.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Educación
+
+                                </h5>
+                                <p class="desc-carrera">Para promover una concepción educativa competitiva y
+                                    emprendedora.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Educación Infantil<br> y Neuroeducación
+
+                                </h5>
+                                <p class="desc-carrera">Para aplicar estrategias de aprendizaje basadas en la
+                                    investigación de las capacidades humanas.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Estrategia y<br> Comunicación Política
+
+                                </h5>
+                                <p class="desc-carrera">Para asesorar en sistemas gubernamentales y planes estratégicos
+                                    y de gobierno.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Finanzas
+
+                                </h5>
+                                <p class="desc-carrera">Para gestionar los recursos financieros y aumentar el valor
+                                    comercial de las empresas.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gerencia de<br> Operaciones y Logística
+
+                                </h5>
+                                <p class="desc-carrera">Para generar alta rentabilidad operativa y lograr el
+                                    fortalecimiento empresarial.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gestión de los<br> Servicios de la Salud
+
+                                </h5>
+                                <p class="desc-carrera">Para mejorar la gestión de los establecimientos de salud y
+                                    brindar un servicio de calidad.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gestión del<br> Talento Humano
+
+                                </h5>
+                                <p class="desc-carrera">Para mejorar el desempeño empresarial gestionando su recurso más
+                                    valioso.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gestión Pública
+
+                                </h5>
+                                <p class="desc-carrera">Para optimizar los recursos públicos que garanticen su inversión
+                                    en el bienestar social.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Ingeniería Civil
+
+                                </h5>
+                                <p class="desc-carrera">Para dirigir empresas inmobiliarias con capacidad de respuesta
+                                    al mercado actual.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Ingeniería<br> de Sistemas
+
+                                </h5>
+                                <p class="desc-carrera">Para desarrollar herramientas que optimicen la gestión de
+                                    información.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Intervención<br> Psicológica
+
+                                </h5>
+                                <p class="desc-carrera">Para plantear alternativas de terapias como nuevas propuestas de
+                                    intervención.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Medicina
+
+                                </h5>
+                                <p class="desc-carrera">Para agilizar diagnósticos y optimizar tratamientos basados en
+                                    la evidencia.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Medición, Evaluación<br> y Acreditación de la <br>Calidad Educativa
+
+                                </h5>
+                                <p class="desc-carrera">Para ejecutar investigaciones educativas que aporten al
+                                    conocimiento y mejora de los procesos de las instituciones.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Obstetricia
+
+                                </h5>
+                                <p class="desc-carrera">Para optimizar los procesos dirigidos a la salud reproductiva.
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Problemas<br> de Aprendizaje
+
+                                </h5>
+                                <p class="desc-carrera">Para desarrollar habilidades y solucionar los problemas que
+                                    limitan el aprendizaje.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Psicología<br> Educativa
+
+                                </h5>
+                                <p class="desc-carrera">Para transformar conductas con aprendizajes significativos</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Relaciones Públicas<br> e Imagen Corporativa
+
+                                </h5>
+                                <p class="desc-carrera">Para incrementar el valor y reputación de las empresas</p>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade show  row" id="carreras-doctorados" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Administración
+                                </h5>
+                                <p class="desc-carrera">Para investigar temas relevantes a la comunidad de los negocios.
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Arquitectura
+
+                                </h5>
+                                <p class="desc-carrera">Para contribuir a la cultura de preservación del medio ambiente
+                                    con sostenibilidad e innovación.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Comunicación Social
+
+                                </h5>
+                                <p class="desc-carrera">Gestiona y adapta los cambios tecnológicos a la comunicación
+                                    social.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Derecho
+
+                                </h5>
+                                <p class="desc-carrera">Genera propuestas que permitan espacios de diálogo e investigar
+                                    temas de interés nacional.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Educación
+
+                                </h5>
+                                <p class="desc-carrera">Para promover una concepción educativa competitiva y
+                                    emprendedora.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gestion Pública y <br>Gobernabilidad
+                                </h5>
+                                <p class="desc-carrera">Para contribuir a la solución de problemas sociales innovando,
+                                    investigando y creando conocimientos.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gestión Universitaria
+
+                                </h5>
+                                <p class="desc-carrera">La gestión moderna aplicada a la educación pública y privada.
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Psicología
+
+                                </h5>
+                                <p class="desc-carrera">Para desarrollar propuestas sistemáticas a los problemas de
+                                    salud mental.</p>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade show  row" id="carreras-diplomados" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Atención Primaria<br> Salud Familiar y<br> Comunitaria
+                                </h5>
+                                <p class="desc-carrera">Aplica herramientas de administración y gestión en concordancia
+                                    con el sistema de salud demostrando responsabilidad y trabajo en equipo.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Herramientas de<br> Coaching y Liderazgo<br> Adaptativo
+
+                                </h5>
+                                <p class="desc-carrera">Facilita el uso de herramientas de coaching y liderazgo
+                                    adaptativo, además de una formación integral y desarrollo de áreas cognitiva y
+                                    personal emocional del profesional para establecer resultados de éxito en las
+                                    organizaciones.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Planeamiento <br>Estratégico para la<br> Gestión Pública
+
+                                </h5>
+                                <p class="desc-carrera">Evalúa las leyes y ordenanzas que norman los gobiernos locales y
+                                    regionales con el propósito de articular criterios de la gestión pública en
+                                    diferentes niveles, demostrando actitud investigadora, democrática y responsabilidad
+                                    social.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Dirección Logística y<br> Supply Chain<br> Management
+
+                                </h5>
+                                <p class="desc-carrera">Identifica nuevas oportunidades de mejora implementando un nuevo
+                                    modelo de gestión de Supply Chain Management totalmente innovador demostrando gran
+                                    sentido para liderar el trabajo en equipo.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gestión en Salud<br> de la Población:<br> Atención primaria en la salud
+
+                                </h5>
+                                <p class="desc-carrera">Aplica herramientas de administración y gestión en concordancia
+                                    con el sistema de salud demostrando responsabilidad y trabajo en equipo.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    E-Learning con <br>Tecnologías Avanzadas
+                                </h5>
+                                <p class="desc-carrera">Desarrolla competencias en el uso del e-Learning,
+                                    Blended-Learning, M-Learning y MOOC, creando contenidos pedagógicos
+                                    tecnodigitalizados para la enseñanza eficaz en la modalidad virtual de los diversos
+                                    programas que te brindará la UCV.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Competencias<br> Directivas
+
+                                </h5>
+                                <p class="desc-carrera">Aplica estrategias de comunicación y personales para el
+                                    desarrollo de metas de los equipos de trabajo de una organización demostrando
+                                    liderazgo y asertividad.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Didáctica e Investigación<br> en Postgrado
+
+                                </h5>
+                                <p class="desc-carrera">Ejerce la docencia en posgrado en las experiencias curriculares
+                                    vinculadas a la investigación científica, asesora de forma eficaz trabajos de tesis
+                                    a nivel de posgrado o participa como jurado de tesis.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Gestión Pública
+
+                                </h5>
+                                <p class="desc-carrera">Planifica estrategias para el desarrollo nacional y al mismo
+                                    tiempo aprende a delegar el talento humano del área donde laboras.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                                <h5 class="title-carrera">
+                                    Salud Pública
+
+                                </h5>
+                                <p class="desc-carrera">Ejerce estrategias. educa y promueve la salud individual y
+                                    colectiva del país.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="ofrecemos" class="l-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center title-section">QUE TE OFRECEMOS</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-front">
+                                    <img src="img/convenios.png" alt="CONVENIOS">
+                                    <h4>CONVENIOS</h4>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-back">
+                                    <h4>MÁS DE 100</h4>
+                                    <p>convenios <br>internacionales.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-front">
+                                    <img src="img/horarios.png" alt="HORARIOS">
+                                    <h4>HORARIOS</h4>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-back">
+                                    <h4>HORARIOS<br> DE ESTUDIO</h4>
+                                    <p>fines de <br>semana.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-front">
+                                    <img src="img/metodologia.png" alt="METODOLOGIAS">
+                                    <h4>METODOLOGIAS</h4>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-back">
+                                    <h4>METODOLOGÍA<br>ACTIVA</h4>
+                                    <p>basada en la <br>resolución <br>de casos.<br></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-front">
+                                    <img src="img/asesoria.png" alt="ASESORIA">
+                                    <h4>ASESORIA</h4>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-back">
+                                    <h4>ASESORÍA DE <br>TESIS</h4>
+                                    <p>sin costo <br>adicional para<br> la elaboración.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-front">
+                                    <img src="img/docentes.png" alt="PENSIONES">
+                                    <h4>DOCENTES</h4>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-back">
+                                    <h4>DOCENTES <br>RECONOCIDOS</h4>
+                                    <p>y especializados <br>con prestigiosa<br> trayectoria.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-front">
+                                    <img src="img/PENSIONES.png" alt="CONVENIOS">
+                                    <h4>PENSIONES</h4>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-back">
+                                    <h4>PENSIONES POR<br> CATEGORÍA</h4>
+                                    <p>basadas en <br>convenios <br>interinstitucionales.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-white">
+                    <span class="d-block">© 2020 UNIVERSIDAD CÉSAR VALLEJO | TODOS LOS DERECHOS RESERVADOS.</span>
+                    <span class="d-block">POLÍTICAS DE PRIVACIDAD | TÉRMINOS DE USO</span>
+
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+
+                        <li><a href="#" class="icoYt" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
